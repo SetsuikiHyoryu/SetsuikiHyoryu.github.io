@@ -205,7 +205,7 @@ template {
 a {
     background: transparent;
     text-decoration: none;
-    color: #08c
+    /* color: #08c */
 }
 
 a:active {
@@ -756,7 +756,10 @@ html {
     height: 100%;
     z-index: 999;
     overflow: hidden;
-    overflow-y: auto;
+    /* default */
+    /* overflow-y: auto; */
+    /* 關閉左側滑動 by冰龍 */
+    overflow-y: hidden;
     margin-bottom: 15px
 }
 
@@ -875,6 +878,7 @@ html {
     opacity: 1
 }
 
+//二創作者寫的頭像旋轉功能，未作說明，我寫下此說明 by冰龍
 .left-col #header .profilepic img:hover {
     transform: rotate(1turn)
 }
@@ -961,7 +965,7 @@ html {
     padding: 10px;
     overflow: hidden;
     overflow-x: auto;
-    background: #000;
+    background: #272822; //代碼块背景顔色 by冰龍
     color: #fff;
     font-size: .9em;
     line-height: 22.400000000000002px
@@ -1003,7 +1007,7 @@ html {
 .article-entry .highlight .gutter pre,
 .article-entry .highlight .gutter pre .line {
     /* color: #fc0000; */
-    color: #808080;
+    color: #666; //代碼块行號顔色 by冰龍
 }
 
 .article-entry code,
