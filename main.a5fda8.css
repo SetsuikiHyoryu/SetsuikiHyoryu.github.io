@@ -827,8 +827,9 @@ html {
 }
 
 .left-col #header .header-menu li a {
-    font-size: 14px;
-    min-width: 300px
+    /* 原來爲14 by冰龍 */
+    font-size: 15px;
+    min-width: 300px;
 }
 
 .left-col #header .header-smart-menu {
