@@ -214,15 +214,32 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h3 id="關閉頭像轉動"><a href="#關閉頭像轉動" class="headerlink" title="關閉頭像轉動"></a>關閉頭像轉動</h3><ul>
-<li>修改<code>..\themes\yilia-plus\source\main.a5fda8.css</code>文件</li>
-<li>將以下代碼注释<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">1turn</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p>修改``文件</p>
+</li>
+<li><p>將以下代碼注释</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">1turn</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <br>
-
+</li>
+<li><p>如果<code>hexo clean</code>與<code>hexo generate</code>後不生效，則進行以下操作</p>
+<ul>
+<li>修改<code>..\themes\yilia-plus\source\main.a5fda8.css</code>文件中相同的代碼块</li>
+</ul>
 </li>
 </ul>
+<br>
+
 <h3 id="關閉左邊欄滑動"><a href="#關閉左邊欄滑動" class="headerlink" title="關閉左邊欄滑動"></a>關閉左邊欄滑動</h3><ul>
-<li>修改<code>..\themes\yilia-plus\source\main.a5fda8.css</code>文件</li>
-<li>修改<code>.left-col</code>的<code>overflow-y</code>屬性<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">    <span class="attribute">transition</span>: all .<span class="number">2s</span> ease-in;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">999</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="comment">/* 原文 */</span></span><br><span class="line">    <span class="comment">/* overflow-y: auto; */</span></span><br><span class="line">    <span class="comment">/* 修改爲 */</span></span><br><span class="line">    <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">15px</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>修改<code>..\themes\yilia-plus\source\main.a5fda8.css</code>文件</p>
+</li>
+<li><p>修改<code>.left-col</code>的<code>overflow-y</code>屬性</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">    <span class="attribute">transition</span>: all .<span class="number">2s</span> ease-in;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">999</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="comment">/* 原文 */</span></span><br><span class="line">    <span class="comment">/* overflow-y: auto; */</span></span><br><span class="line">    <span class="comment">/* 修改爲 */</span></span><br><span class="line">    <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">15px</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<br>
+</li>
+<li><p>如果<code>hexo clean</code>與<code>hexo generate</code>後不生效，則進行以下操作</p>
+<ul>
+<li>修改<code>..\themes\yilia-plus\source-src\cssleft.scss</code>文件中相同的代碼块</li>
+</ul>
+</li>
 </ul>
 
     
