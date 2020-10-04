@@ -689,7 +689,9 @@ input,
 select,
 textarea {
     color: #1a1a1a;
-    font-family: lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+    /*font-family的修改 by冰龍*/
+    /* font-family: lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif; */
+    font-family: 'Fira Code', 'Source Han Sans', 'Courier New', monospace;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.75
@@ -886,7 +888,9 @@ html {
 .left-col #header .header-author {
     text-align: center;
     margin: .67em 0;
-    font-family: Roboto, serif;
+    /* font-faily的修改 by冰龍 */
+    /* font-family: Roboto, serif; */
+    font-family: 'Fira Code', 'Source Han Sans', 'Courier New', monospace;
     font-size: 30px;
     transition: .3s
 }
@@ -2295,7 +2299,7 @@ pre .id {
 
 .article-entry ol,
 .article-entry ul {
-    font-size: 14px;
+    font-size: 16px !important;
     margin: 0 20px;
     margin-top: 1.6em;
     margin-bottom: 1.6em
