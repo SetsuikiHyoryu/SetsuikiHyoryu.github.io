@@ -18,7 +18,7 @@
 <meta property="og:description" content="需要優先修改的文件 樣式：..\themes\yilia-plus\source\main.a5fda8.css  關閉頭像轉動 修改..\themes\yilia-plus\source-src\css\left.scss文件 注释transform屬性">
 <meta property="og:locale">
 <meta property="article:published_time" content="2020-10-04T03:53:35.000Z">
-<meta property="article:modified_time" content="2020-10-04T09:29:58.280Z">
+<meta property="article:modified_time" content="2020-10-08T08:36:04.691Z">
 <meta property="article:author" content="雪域冰龍">
 <meta property="article:tag" content="主題優化">
 <meta name="twitter:card" content="summary">
@@ -221,7 +221,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">219字</span>
+      <span class="post-count">221字</span>
     </span>
   </span>
 
@@ -241,29 +241,34 @@
             
                 <div class="article-entry" itemprop="articleBody">
                     
-                                        <br>
-
-<h3 id="需要優先修改的文件"><a href="#需要優先修改的文件" class="headerlink" title="需要優先修改的文件"></a>需要優先修改的文件</h3><ul>
+                                        <h3 id="需要優先修改的文件"><a href="#需要優先修改的文件" class="headerlink" title="需要優先修改的文件"></a>需要優先修改的文件</h3><ul>
 <li>樣式：<code>..\themes\yilia-plus\source\main.a5fda8.css</code></li>
 </ul>
 <h3 id="關閉頭像轉動"><a href="#關閉頭像轉動" class="headerlink" title="關閉頭像轉動"></a>關閉頭像轉動</h3><ul>
 <li>修改<code>..\themes\yilia-plus\source-src\css\left.scss</code>文件</li>
-<li>注释transform屬性<h4 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">    <span class="comment">/*默認是無注释 by冰龍*/</span></span><br><span class="line">    <span class="comment">/*transform: rotateZ(360deg);*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>如果<code>hexo clean</code>與<code>hexo generate</code>後不生效，則進行以下操作<ul>
-<li>修改<code>..\themes\yilia-plus\source\main.a5fda8.css</code>文件</li>
+<li>注释transform屬性</li>
 </ul>
+<h4 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">rotateZ</span>(<span class="number">360deg</span>);</span><br><span class="line">    <span class="comment">/*默認是無注释 by冰龍*/</span></span><br><span class="line">    <span class="comment">/*transform: rotateZ(360deg);*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>將以下代碼注释<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">1turn</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p>如果<code>hexo clean</code>與<code>hexo generate</code>後不生效，則進行以下操作</p>
+<ul>
+<li><p>修改<code>..\themes\yilia-plus\source\main.a5fda8.css</code>文件</p>
+</li>
+<li><p>將以下代碼注释</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> <span class="selector-id">#header</span> <span class="selector-class">.profilepic</span> <span class="selector-tag">img</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">1turn</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
 </li>
 </ul>
-<br>
-
 <h3 id="關閉左邊欄滑動"><a href="#關閉左邊欄滑動" class="headerlink" title="關閉左邊欄滑動"></a>關閉左邊欄滑動</h3><ul>
 <li>修改<code>..\themes\yilia-plus\source-src\css\left.scss</code>文件</li>
-<li>修改<code>.left-col</code>的<code>overflow-y</code>屬性<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">    <span class="attribute">transition</span>: all .<span class="number">2s</span> ease-in;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">999</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="comment">/* 原文 */</span></span><br><span class="line">    <span class="comment">/* overflow-y: auto; */</span></span><br><span class="line">    <span class="comment">/* 修改爲 */</span></span><br><span class="line">    <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">15px</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>修改<code>.left-col</code>的<code>overflow-y</code>屬性</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left-col</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">    <span class="attribute">transition</span>: all .<span class="number">2s</span> ease-in;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">999</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="comment">/* 原文 */</span></span><br><span class="line">    <span class="comment">/* overflow-y: auto; */</span></span><br><span class="line">    <span class="comment">/* 修改爲 */</span></span><br><span class="line">    <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: <span class="number">15px</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
 <li>如果<code>hexo clean</code>與<code>hexo generate</code>後不生效，則進行以下操作<ul>
 <li>修改<code>..\themes\yilia-plus\source-src\cssleft.scss</code>文件中相同的代碼块</li>
 </ul>
@@ -603,6 +608,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">最適化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">動画作成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">手順書</a>
               </li>
              
               <li class="article-tag-list-item">
