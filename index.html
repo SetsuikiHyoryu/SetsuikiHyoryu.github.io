@@ -222,18 +222,21 @@
             
                 <div class="article-entry" itemprop="articleBody">
                     
-                        <h2 id="1-PHPのインストール"><a href="#1-PHPのインストール" class="headerlink" title="1. PHPのインストール"></a>1. PHPのインストール</h2><ol>
-<li><a target="_blank" rel="noopener" href="https://www.php.net/downloads">PHP の公式サイト</a>で PHP の言語パックをダウンロードする(特に仮想マシンでPHP開発環境を整えた人もローカルマシンでPHPをインストールする必要がある)。<ul>
+                        <h2 id="1-PHP-のインストール"><a href="#1-PHP-のインストール" class="headerlink" title="1. PHP のインストール"></a>1. PHP のインストール</h2><ol>
+<li><p><a target="_blank" rel="noopener" href="https://www.php.net/downloads">PHP の公式サイト</a>で PHP の言語パックをダウンロードする(特に仮想マシンで PHP 開発環境を整えた人もローカルマシンで PHP をインストールする必要がある)。</p>
+<ul>
 <li>各々の OS 環境に応じて選択してください。<ul>
-<li><strong>Linux</strong> と <strong>Mac</strong> は <code>tar.xx</code>を使えるらしい。</li>
+<li><strong>Linux</strong> と <strong>Mac</strong> は <code>tar.xx</code> を使えるらしい。</li>
 <li>私は <strong>Windows</strong> 環境なので <code>Windows downloads</code> を選択する。</li>
 </ul>
 </li>
 <li>保存場所のパスはアルファベットのみのがお薦め。</li>
 </ul>
 </li>
-<li>ダウンロードファイルを解凍し、そのままでインストールが完了する。</li>
-<li>環境変数の PATH に PHP のパスを入れる。<ul>
+<li><p>ダウンロードファイルを解凍し、そのままでインストールが完了する。</p>
+</li>
+<li><p>環境変数の PATH に PHP のパスを入れる。</p>
+<ul>
 <li>Linux と Mac OS の方は<a target="_blank" rel="noopener" href="https://uxmilk.jp/52370" title="【export】Linuxで環境変数を設定・削除するコマンド"><em>参考資料 3</em></a> を参照してください。</li>
 <li>Windows OS の方は以下の様にする。<ol>
 <li><code>Win + S</code> で Cortana を呼び出し、<code>環境変数を編集</code>を入力して選択する。</li>
@@ -245,10 +248,11 @@
 <li>コマンドプロンプトに <code>php -v</code> を入力して実行し、バージョン情報が正確に表示されれば成功である。</li>
 </ul>
 </li>
-<li>VSCode の設定ファイル <code>Settings.json</code> に以下のコードを入力してPHPパックと繋げる。</li>
-</ol>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;php.suggest.basic&quot;: false, //VSCode デフォルトの候補提示昨日を無効にする</span><br><span class="line">&quot;php.validate.executablePath&quot;: &quot;xx/xx/php.exe&quot;, //php ファイルのパス</span><br></pre></td></tr></table></figure>
+<li><p>VSCode の設定ファイル <code>Settings.json</code> に以下のコードを入力して PHP パックと繋げる。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;php.suggest.basic&quot;: false, //VSCode デフォルトの候補提示昨日   を無効にする</span><br><span class="line">&quot;php.validate.executablePath&quot;: &quot;xx/xx/php.exe&quot;, //php フ   ァイルのパス</span><br></pre></td></tr></table></figure>
 
+</li>
+</ol>
 <h3 id=""><a href="#" class="headerlink" title=""></a>
                             
                                 <a class="article-more-a" href="/2020/10/16/VSCode%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%92%B0%E5%A2%83%E7%84%A1%E3%81%97%E3%81%A7%E3%81%AEPHP%E3%83%87%E3%83%90%E3%82%B0%E6%96%B9%E6%B3%95/#more">
@@ -1129,6 +1133,14 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">技術</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Test</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">技術ノート</a>
               </li>
              
@@ -1142,14 +1154,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">手順書</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技術</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Test</a>
               </li>
              
               <li class="article-tag-list-item">

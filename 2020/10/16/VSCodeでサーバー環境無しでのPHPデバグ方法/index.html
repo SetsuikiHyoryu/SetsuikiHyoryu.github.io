@@ -10,12 +10,12 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="1. PHPのインストール PHP の公式サイトで PHP の言語パックをダウンロードする(特に仮想マシンでPHP開発環境を整えた人もローカルマシンでPHPをインストールする必要がある)。 各々の OS 環境に応じて選択してください。 Linux と Mac は tar.xxを使えるらしい。 私は Windows 環境なので Windows downloads を選択する。   保存場所のパスはア">
+  <meta name="description" content="1. PHP のインストール PHP の公式サイトで PHP の言語パックをダウンロードする(特に仮想マシンで PHP 開発環境を整えた人もローカルマシンで PHP をインストールする必要がある)。  各々の OS 環境に応じて選択してください。 Linux と Mac は tar.xx を使えるらしい。 私は Windows 環境なので Windows downloads を選択する。   保存">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VSCodeでサーバー環境無しでのPHPデバグ方法">
 <meta property="og:url" content="https://setsuikihyoryu.github.io/2020/10/16/VSCode%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%92%B0%E5%A2%83%E7%84%A1%E3%81%97%E3%81%A7%E3%81%AEPHP%E3%83%87%E3%83%90%E3%82%B0%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="爲人民服務-人民に奉仕する">
-<meta property="og:description" content="1. PHPのインストール PHP の公式サイトで PHP の言語パックをダウンロードする(特に仮想マシンでPHP開発環境を整えた人もローカルマシンでPHPをインストールする必要がある)。 各々の OS 環境に応じて選択してください。 Linux と Mac は tar.xxを使えるらしい。 私は Windows 環境なので Windows downloads を選択する。   保存場所のパスはア">
+<meta property="og:description" content="1. PHP のインストール PHP の公式サイトで PHP の言語パックをダウンロードする(特に仮想マシンで PHP 開発環境を整えた人もローカルマシンで PHP をインストールする必要がある)。  各々の OS 環境に応じて選択してください。 Linux と Mac は tar.xx を使えるらしい。 私は Windows 環境なので Windows downloads を選択する。   保存">
 <meta property="og:locale">
 <meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_After_Launch.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_List.jpg">
@@ -25,7 +25,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Console.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Bar.jpg">
 <meta property="article:published_time" content="2020-10-16T07:35:21.000Z">
-<meta property="article:modified_time" content="2020-10-16T07:39:59.111Z">
+<meta property="article:modified_time" content="2020-10-16T07:49:54.155Z">
 <meta property="article:author" content="雪域冰龍">
 <meta property="article:tag" content="技術ノート">
 <meta property="article:tag" content="環境設定">
@@ -232,7 +232,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">977字</span>
+      <span class="post-count">978字</span>
     </span>
   </span>
 
@@ -252,18 +252,21 @@
             
                 <div class="article-entry" itemprop="articleBody">
                     
-                                        <h2 id="1-PHPのインストール"><a href="#1-PHPのインストール" class="headerlink" title="1. PHPのインストール"></a>1. PHPのインストール</h2><ol>
-<li><a target="_blank" rel="noopener" href="https://www.php.net/downloads">PHP の公式サイト</a>で PHP の言語パックをダウンロードする(特に仮想マシンでPHP開発環境を整えた人もローカルマシンでPHPをインストールする必要がある)。<ul>
+                                        <h2 id="1-PHP-のインストール"><a href="#1-PHP-のインストール" class="headerlink" title="1. PHP のインストール"></a>1. PHP のインストール</h2><ol>
+<li><p><a target="_blank" rel="noopener" href="https://www.php.net/downloads">PHP の公式サイト</a>で PHP の言語パックをダウンロードする(特に仮想マシンで PHP 開発環境を整えた人もローカルマシンで PHP をインストールする必要がある)。</p>
+<ul>
 <li>各々の OS 環境に応じて選択してください。<ul>
-<li><strong>Linux</strong> と <strong>Mac</strong> は <code>tar.xx</code>を使えるらしい。</li>
+<li><strong>Linux</strong> と <strong>Mac</strong> は <code>tar.xx</code> を使えるらしい。</li>
 <li>私は <strong>Windows</strong> 環境なので <code>Windows downloads</code> を選択する。</li>
 </ul>
 </li>
 <li>保存場所のパスはアルファベットのみのがお薦め。</li>
 </ul>
 </li>
-<li>ダウンロードファイルを解凍し、そのままでインストールが完了する。</li>
-<li>環境変数の PATH に PHP のパスを入れる。<ul>
+<li><p>ダウンロードファイルを解凍し、そのままでインストールが完了する。</p>
+</li>
+<li><p>環境変数の PATH に PHP のパスを入れる。</p>
+<ul>
 <li>Linux と Mac OS の方は<a target="_blank" rel="noopener" href="https://uxmilk.jp/52370" title="【export】Linuxで環境変数を設定・削除するコマンド"><em>参考資料 3</em></a> を参照してください。</li>
 <li>Windows OS の方は以下の様にする。<ol>
 <li><code>Win + S</code> で Cortana を呼び出し、<code>環境変数を編集</code>を入力して選択する。</li>
@@ -275,10 +278,11 @@
 <li>コマンドプロンプトに <code>php -v</code> を入力して実行し、バージョン情報が正確に表示されれば成功である。</li>
 </ul>
 </li>
-<li>VSCode の設定ファイル <code>Settings.json</code> に以下のコードを入力してPHPパックと繋げる。</li>
-</ol>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;php.suggest.basic&quot;: false, //VSCode デフォルトの候補提示昨日を無効にする</span><br><span class="line">&quot;php.validate.executablePath&quot;: &quot;xx/xx/php.exe&quot;, //php ファイルのパス</span><br></pre></td></tr></table></figure>
+<li><p>VSCode の設定ファイル <code>Settings.json</code> に以下のコードを入力して PHP パックと繋げる。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;php.suggest.basic&quot;: false, //VSCode デフォルトの候補提示昨日   を無効にする</span><br><span class="line">&quot;php.validate.executablePath&quot;: &quot;xx/xx/php.exe&quot;, //php フ   ァイルのパス</span><br></pre></td></tr></table></figure>
 
+</li>
+</ol>
 <h3 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h3><hr>
 <h2 id="2-拡張機能のインストール"><a href="#2-拡張機能のインストール" class="headerlink" title="2. 拡張機能のインストール"></a>2. 拡張機能のインストール</h2><ol>
 <li><p>PHP コード自動補完拡張機能 <code>PHP IntelliSense</code> をインストールする。</p>
@@ -309,7 +313,7 @@
 <ol>
 <li><p>コマンドプロンプトで <code>php -i</code> 命令を実行し、phpinfo の情報を得る。</p>
 </li>
-<li><p>得たphpinfoをコピーして <a target="_blank" rel="noopener" href="https://xdebug.org/wizard" title="Installation Wizard">xdebug 公式サイトのバージョン確認ページ</a>に貼る。</p>
+<li><p>得た phpinfo をコピーして <a target="_blank" rel="noopener" href="https://xdebug.org/wizard" title="Installation Wizard">xdebug 公式サイトのバージョン確認ページ</a>に貼る。</p>
 </li>
 <li><p><code>Analyse my phpinfo() output</code> ボタンを押して算出された xdebug パック をダウンロードする。</p>
 </li>
@@ -319,7 +323,7 @@
 <ul>
 <li><code>php.ini-development</code> の他に同じ場所 <code>php.ini-production</code> 配置ファイルもあるが、クライアント用のファイルでエラーが表示されないように設定されているそうだ。</li>
 </ul>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 私は全て属性の意味合いを把握していません。</span></span><br><span class="line"><span class="section">[XDebug]</span></span><br><span class="line"><span class="attr">zend_extension</span> =  <span class="string">&quot;xxx\php\ext\php_xdebug.dll&quot;</span> <span class="comment"># zend_extensionエンジンの選択、パスは xdebug のを入れる。</span></span><br><span class="line"><span class="attr">xdebug.profiler_append</span> = <span class="number">0</span></span><br><span class="line"><span class="attr">xdebug.profiler_enable</span> = <span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.profiler_enable_trigger</span> = <span class="number">0</span></span><br><span class="line"><span class="attr">xdebug.profiler_output_dir</span> =  <span class="string">&quot;xxx\temp&quot;</span> <span class="comment"># 自分で一時ファイルのフォルダを作る。</span></span><br><span class="line"><span class="attr">xdebug.profiler_output_name</span> = <span class="string">&quot;cachegrind.out.%t-%s&quot;</span></span><br><span class="line"><span class="attr">xdebug.remote_enable</span> = <span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.remote_autostart</span> = <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 私は全て属性の意味合いを把握していません。</span></span><br><span class="line"><span class="section">[XDebug]</span></span><br><span class="line"><span class="attr">zend_extension</span> =  <span class="string">&quot;xxx\php\ext\php_xdebug.dll&quot;</span> <span class="comment"># zend_extensionエンジンの選択、パスはxdebugのを入れる。</span></span><br><span class="line"><span class="attr">xdebug.profiler_append</span> = <span class="number">0</span></span><br><span class="line"><span class="attr">xdebug.profiler_enable</span> = <span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.profiler_enable_trigger</span> = <span class="number">0</span></span><br><span class="line"><span class="attr">xdebug.profiler_output_dir</span> =  <span class="string">&quot;xxx\temp&quot;</span> <span class="comment"># 自分で一時ファイルのフォルダを作る。</span></span><br><span class="line"><span class="attr">xdebug.profiler_output_name</span> = <span class="string">&quot;cachegrind.out.%t-%s&quot;</span></span><br><span class="line"><span class="attr">xdebug.remote_enable</span> = <span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.remote_autostart</span> = <span class="number">1</span></span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
@@ -383,10 +387,10 @@
 <h3 id="4-3-遠距離でのデバグ方法（未実証、参考資料-1-18-10-からの参照を推奨する）"><a href="#4-3-遠距離でのデバグ方法（未実証、参考資料-1-18-10-からの参照を推奨する）" class="headerlink" title="4.3. 遠距離でのデバグ方法（未実証、参考資料 1  18:10 からの参照を推奨する）"></a>4.3. 遠距離でのデバグ方法（未実証、<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av71103179/" title="【教程】配置vscode的PHP自动补全提示与远程调试模式Xdebug"><em>参考資料 1</em></a>  18:10 からの参照を推奨する）</h3><ol>
 <li><p>仮想マシンやサーバー内の PHP 配置ファイル <code>/etc/php/バージョン（通常は数字のみ）/fpm/php.ini</code> を訂正する。</p>
 <ul>
-<li><p>ローカルPC内のファイルではないことを注意してください！</p>
+<li><p>ローカル PC 内のファイルではないことを注意してください！</p>
 </li>
 <li><p>以下のコードを入力する。</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 私は全て属性の意味合いを把握していません。</span></span><br><span class="line"><span class="section">[XDebug]</span></span><br><span class="line"><span class="attr">xdebug.remote_enable</span> = <span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.remote_autostart</span> = <span class="number">1</span></span><br><span class="line">xdebug.romote_host = # ローカル PC の IP アドレス</span><br><span class="line"><span class="attr">xdebug.remote_port</span> = <span class="number">9000</span> <span class="comment"># launch.json で定義されたport、VSCodeにリッスンされる。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 私は全て属性の意味合いを把握していません。</span></span><br><span class="line"><span class="section">[XDebug]</span></span><br><span class="line"><span class="attr">xdebug.remote_enable</span> = <span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.remote_autostart</span> = <span class="number">1</span></span><br><span class="line">xdebug.romote_host = # ローカル PC の IP アドレス</span><br><span class="line"><span class="attr">xdebug.remote_port</span> = <span class="number">9000</span> <span class="comment"># launch.jsonで定義されたport、VSCodeにリッスンされる。</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -396,7 +400,7 @@
 </li>
 </ol>
 <ul>
-<li>原理は容器内の PHP は受け取った URL 情報を ローカル PC の IP を通じて port 9000 でローカル PC に発信する。port 9000 はVSCodeにレッスンされているので発信された情報受け取れる。</li>
+<li>原理は容器内の PHP は受け取った URL 情報を ローカル PC の IP を通じて port 9000 でローカル PC に発信する。port 9000 は VSCode にレッスンされているので発信された情報受け取れる。</li>
 </ul>
 <hr>
 <h2 id="参考資料"><a href="#参考資料" class="headerlink" title="参考資料"></a>参考資料</h2><ol>
@@ -720,6 +724,14 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">技術</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Test</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">技術ノート</a>
               </li>
              
@@ -733,14 +745,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">手順書</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技術</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Test</a>
               </li>
              
               <li class="article-tag-list-item">
