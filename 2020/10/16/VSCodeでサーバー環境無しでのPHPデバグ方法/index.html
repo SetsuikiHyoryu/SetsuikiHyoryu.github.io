@@ -25,7 +25,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Console.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Bar.jpg">
 <meta property="article:published_time" content="2020-10-16T07:35:21.000Z">
-<meta property="article:modified_time" content="2020-10-16T09:09:42.634Z">
+<meta property="article:modified_time" content="2020-10-16T10:15:22.252Z">
 <meta property="article:author" content="雪域冰龍">
 <meta property="article:tag" content="技術ノート">
 <meta property="article:tag" content="環境設定">
@@ -283,7 +283,7 @@
 
 </li>
 </ol>
-<h3 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h3><hr>
+<hr>
 <h2 id="2-拡張機能のインストール"><a href="#2-拡張機能のインストール" class="headerlink" title="2. 拡張機能のインストール"></a>2. 拡張機能のインストール</h2><ol>
 <li><p>PHP コード自動補完拡張機能 <code>PHP IntelliSense</code> をインストールする。</p>
 <ul>
@@ -331,55 +331,49 @@
 </ul>
 <hr>
 <h2 id="4-実際にデバグを試みる"><a href="#4-実際にデバグを試みる" class="headerlink" title="4. 実際にデバグを試みる"></a>4. 実際にデバグを試みる</h2><h3 id="4-1-環境の設置"><a href="#4-1-環境の設置" class="headerlink" title="4.1. 環境の設置"></a>4.1. 環境の設置</h3><ol>
-<li><p>サイドバーの <strong>Run</strong> を選択する。</p>
-</li>
-<li><p><code>create a launch.json file</code> をクリックする。</p>
-<ul>
+<li>サイドバーの <strong>Run</strong> を選択する。</li>
+<li><code>create a launch.json file</code> をクリックする。<ul>
 <li>プロジェクトフォルダを開いていない状態は <code>Open a flolder and create a launch.json file</code> という表記で、 <code>Open a flolder</code> をクリックしてください。</li>
 </ul>
 </li>
-<li><p>生成された <code>.vscode/launch.json</code> をそのまま保存し、サイドバーの <strong>Run</strong> が以下の図の様になっているはず。</p>
-<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_After_Launch.jpg" alt="4.1.3. Run_After_Launch" title="4.1.3. Run"></p>
+<li>生成された <code>.vscode/launch.json</code> をそのまま保存し、サイドバーの <strong>Run</strong> が以下の図の様になっているはず。<ul>
+<li><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_After_Launch.jpg" alt="4.1.3. Run_After_Launch" title="4.1.3. Run"></li>
+</ul>
 </li>
-<li><p><strong>Run</strong> の最上層のリストをクリックすると以下の図の様になる。</p>
-<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_List.jpg" alt="4.1.4. Run_List" title="4.1.4. List"></p>
-<ul>
+<li><strong>Run</strong> の最上層のリストをクリックすると以下の図の様になる。<ul>
+<li><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_List.jpg" alt="4.1.4. Run_List" title="4.1.4. List"></li>
 <li><code>Listen for XDebug</code> は遠距離サーバーでのデバク方法。</li>
 <li><code>Launch currently open script</code> はローカルでのデバグ方法。</li>
 </ul>
 </li>
 </ol>
 <h3 id="4-2-ローカルでのデバグ方法"><a href="#4-2-ローカルでのデバグ方法" class="headerlink" title="4.2. ローカルでのデバグ方法"></a>4.2. ローカルでのデバグ方法</h3><ol>
-<li><p><strong>Run</strong> の最上層のリストから <code>Launch currently open script</code> を選択する。</p>
-</li>
-<li><p>テスト用の PHP ファイルを開く。</p>
-</li>
-<li><p>デバグしたい行の行番号の外をクリックする。赤い点が付与される。</p>
-<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/PHP_Test_File.jpg" alt="4.2.3. PHP_Test_File" title="4.2.3. Test_File"></p>
-<ul>
+<li><strong>Run</strong> の最上層のリストから <code>Launch currently open script</code> を選択する。</li>
+<li>テスト用の PHP ファイルを開く。</li>
+<li>デバグしたい行の行番号の外をクリックする。赤い点が付与される。<ul>
+<li><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/PHP_Test_File.jpg" alt="4.2.3. PHP_Test_File" title="4.2.3. Test_File"></li>
 <li>関数をデバグする場合、その行に赤い点を付けると表示されるのにデバグ開始後にもう一歩進む必要がある。</li>
 <li>赤い点の位置をもう一回押すと赤い点を消せる。</li>
 </ul>
 </li>
-<li><p>リストの左にある矢印アイコンを押してデバグが開始される。</p>
-<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Start.jpg" alt="4.2.4 Start" title="4.2.4. Start">  </p>
-<ul>
-<li><p>画面でアクティブなファイルのみデバグされるので、複数ファイルの場合、実行するコードのあるファイルでデバグしてください。</p>
+<li>リストの左にある矢印アイコンを押してデバグが開始される。<ul>
+<li><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Start.jpg" alt="4.2.4 Start" title="4.2.4. Start">  </li>
+<li>画面でアクティブなファイルのみデバグされるので、複数ファイルの場合、実行するコードのあるファイルでデバグしてください。</li>
+<li>赤い点を付けないで実行するとファイル全体がデバグされる。</li>
+<li>デバグの結果は <strong>DEBUG CONSOLE</strong> に表示される。<ul>
+<li><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Screen.jpg" alt="4.2.4. Debug_Screen" title="4.2.4. Debug_Screen">  </li>
+</ul>
 </li>
-<li><p>赤い点を付けないで実行するとファイル全体がデバグされる。</p>
-</li>
-<li><p>デバグの結果は <strong>DEBUG CONSOLE</strong> に表示される。</p>
-<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Screen.jpg" alt="4.2.4. Debug_Screen" title="4.2.4. Debug_Screen">  </p>
-</li>
-<li><p>ファイルが開けれた最初のデバグは <strong>DEBUG CONSOLE</strong> は自動にポップアップするが、ファイルが開けれて <strong>DEBUG CONSOLE</strong> を閉じた状態で二度目以降のデバグは <strong>DEBUG CONSOLE</strong> が自動にポップアップされない（解決方法を検索したがまだ見付けていない）。</p>
-<ul>
-<li><p>手動で <strong>DEBUG CONSOLE</strong> を開くにはリストの右にある虫アイコンを押すことで実現できる。</p>
-<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Console.jpg" alt="4.2.4. Debug_Console" title="4.2.4. Debug_Console"></p>
+<li>ファイルが開けれた最初のデバグは <strong>DEBUG CONSOLE</strong> は自動にポップアップするが、ファイルが開けれて <strong>DEBUG CONSOLE</strong> を閉じた状態で二度目以降のデバグは <strong>DEBUG CONSOLE</strong> が自動にポップアップされない（解決方法を検索したがまだ見付けていない）。<ul>
+<li>手動で <strong>DEBUG CONSOLE</strong> を開くにはリストの右にある虫アイコンを押すことで実現できる。<ul>
+<li><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Console.jpg" alt="4.2.4. Debug_Console" title="4.2.4. Debug_Console"></li>
+</ul>
 </li>
 </ul>
 </li>
-<li><p>デバグ開始後、完了していない限り、ファイル画面の上方に下の図の様なデバグのコントロールバーが出る。ステップイン、ステップインアウト等の操作ができる。</p>
-<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Bar.jpg" alt="4.2.4. Debug_Bar" title="4.2.4. Debug_Bar"></p>
+<li>デバグ開始後、完了していない限り、ファイル画面の上方に下の図の様なデバグのコントロールバーが出る。ステップイン、ステップインアウト等の操作ができる。<ul>
+<li><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Bar.jpg" alt="4.2.4. Debug_Bar" title="4.2.4. Debug_Bar"></li>
+</ul>
 </li>
 </ul>
 </li>

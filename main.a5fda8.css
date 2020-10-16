@@ -2298,10 +2298,6 @@ pre .id {
     margin-right: 10px
 }
 
-.article-entry ol {
-    list-style: decimal
-}
-
 .article-entry ol,
 .article-entry ul {
     font-size: 16px !important;
@@ -2310,8 +2306,54 @@ pre .id {
     margin-bottom: 1.6em
 }
 
+
+/* Markdown有序列表 by冰龍 */
+
+.article-entry ol {
+    list-style: decimal
+}
+
+.article-entry ol ul {
+    list-style: circle
+}
+
+.article-entry ol ol {
+    list-style: lower-roman
+}
+
+.article-entry ol ul ol,
+.article-entry ol ol ol {
+    list-style: lower-alpha
+}
+
+.article-entry ol ul ul,
+.article-entry ol ol ul {
+    list-style: square
+}
+
+
+/* Markdown無序列表 by冰龍 */
+
 .article-entry ul {
     list-style: disc
+}
+
+.article-entry ul ul {
+    list-style: circle
+}
+
+.article-entry ul ol {
+    list-style: lower-roman
+}
+
+.article-entry ul ul ol,
+.article-entry ul ol ol {
+    list-style: lower-alpha
+}
+
+.article-entry ul ul ul,
+.article-entry ul ol ul {
+    list-style: square
 }
 
 .article-entry li a {
@@ -2322,7 +2364,8 @@ pre .id {
 .article-entry li ol,
 .article-entry li ul {
     margin-left: 30px;
-    list-style: disc;
+    /* 此項有重複 by冰龍 */
+    /* list-style: disc; */
     margin-top: 0;
     margin-bottom: 0
 }
