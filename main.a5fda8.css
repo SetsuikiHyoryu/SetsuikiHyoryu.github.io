@@ -881,7 +881,9 @@ html {
     opacity: 1
 }
 
-//二創作者寫的頭像旋轉功能，未作說明，我寫下此說明 by冰龍
+
+/* 二創作者寫的頭像旋轉功能，未作說明，我寫下此說明 by冰龍 */
+
 .left-col #header .profilepic img:hover {
     transform: rotate(1turn)
 }
@@ -970,7 +972,8 @@ html {
     padding: 10px;
     overflow: hidden;
     overflow-x: auto;
-    background: #272822; //代碼块背景顔色 by冰龍
+    /* 代碼块背景顔色 by冰龍 */
+    background: #272822;
     color: #fff;
     font-size: .9em;
     line-height: 22.400000000000002px
@@ -1011,8 +1014,9 @@ html {
 .article-entry .gist .gist-file .gist-data .line-numbers,
 .article-entry .highlight .gutter pre,
 .article-entry .highlight .gutter pre .line {
+    /* 代碼块行號顔色 by冰龍 */
     /* color: #fc0000; */
-    color: #666; //代碼块行號顔色 by冰龍
+    color: #666;
 }
 
 .article-entry code,
@@ -2325,7 +2329,11 @@ pre .id {
 
 .article-entry li ol li:before,
 .article-entry li ul li:before {
-    content: "";
+    /* 修改 by冰龍
+    該屬性會在列表圖標後産生一個空格，
+    使得子列表下包含代碼块及圖片時子列表的文字換行。
+     */
+    /* content: ""; */
     background: #dedede
 }
 
