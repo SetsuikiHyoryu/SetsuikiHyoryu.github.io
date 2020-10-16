@@ -6,23 +6,33 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://setsuikihyoryu.github.io">
-  <title>My First Document | 爲人民服務-人民に奉仕する</title>
+  <title>VSCodeでサーバー環境無しでのPHPデバグ方法 | 爲人民服務-人民に奉仕する</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="這是一個測試文件1echo &amp;#x27;Hello world&amp;#x27;;  使用hexo寫博文的流程以下命令輸入在命令行終端中">
+  <meta name="description" content="1. PHPのインストール PHP の公式サイトで PHP の言語パックをダウンロードする(特に仮想マシンでPHP開発環境を整えた人もローカルマシンでPHPをインストールする必要がある)。 各々の OS 環境に応じて選択してください。 Linux と Mac は tar.xxを使えるらしい。 私は Windows 環境なので Windows downloads を選択する。   保存場所のパスはア">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My First Document">
-<meta property="og:url" content="https://setsuikihyoryu.github.io/2020/10/03/My-First-Document/index.html">
+<meta property="og:title" content="VSCodeでサーバー環境無しでのPHPデバグ方法">
+<meta property="og:url" content="https://setsuikihyoryu.github.io/2020/10/16/VSCode%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%92%B0%E5%A2%83%E7%84%A1%E3%81%97%E3%81%A7%E3%81%AEPHP%E3%83%87%E3%83%90%E3%82%B0%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="爲人民服務-人民に奉仕する">
-<meta property="og:description" content="這是一個測試文件1echo &amp;#x27;Hello world&amp;#x27;;  使用hexo寫博文的流程以下命令輸入在命令行終端中">
+<meta property="og:description" content="1. PHPのインストール PHP の公式サイトで PHP の言語パックをダウンロードする(特に仮想マシンでPHP開発環境を整えた人もローカルマシンでPHPをインストールする必要がある)。 各々の OS 環境に応じて選択してください。 Linux と Mac は tar.xxを使えるらしい。 私は Windows 環境なので Windows downloads を選択する。   保存場所のパスはア">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-10-02T20:25:03.000Z">
-<meta property="article:modified_time" content="2020-10-08T08:45:06.101Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_After_Launch.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_List.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/PHP_Test_File.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Start.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Screen.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Console.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Bar.jpg">
+<meta property="article:published_time" content="2020-10-16T07:35:21.000Z">
+<meta property="article:modified_time" content="2020-10-16T07:39:59.111Z">
 <meta property="article:author" content="雪域冰龍">
-<meta property="article:tag" content="技術">
-<meta property="article:tag" content="Test">
+<meta property="article:tag" content="技術ノート">
+<meta property="article:tag" content="環境設定">
+<meta property="article:tag" content="デバグ">
+<meta property="article:tag" content="手順書">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_After_Launch.jpg">
   
     <link rel="alternative" href="/atom.xml" title="爲人民服務-人民に奉仕する" type="application/atom+xml">
   
@@ -189,14 +199,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-My-First-Document" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-VSCodeでサーバー環境無しでのPHPデバグ方法" class="article article-type-post " itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
   
     <h1 class="article-title" itemprop="name">
-      My First Document
+      VSCodeでサーバー環境無しでのPHPデバグ方法
     </h1>
   
 
@@ -208,8 +218,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/10/03/My-First-Document/" class="archive-article-date">
-        <time datetime="2020-10-02T20:25:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-03</time>
+<a href="/2020/10/16/VSCode%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%92%B0%E5%A2%83%E7%84%A1%E3%81%97%E3%81%A7%E3%81%AEPHP%E3%83%87%E3%83%90%E3%82%B0%E6%96%B9%E6%B3%95/" class="archive-article-date">
+        <time datetime="2020-10-16T07:35:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-16</time>
 </a>
 
                             
@@ -222,7 +232,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">488字</span>
+      <span class="post-count">977字</span>
     </span>
   </span>
 
@@ -231,7 +241,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">4分</span>
     </span>
   </span>
 </div>
@@ -242,118 +252,157 @@
             
                 <div class="article-entry" itemprop="articleBody">
                     
-                                        <h2 id="這是一個測試文件"><a href="#這是一個測試文件" class="headerlink" title="這是一個測試文件"></a>這是一個測試文件</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> <span class="string">&#x27;Hello world&#x27;</span>;</span><br></pre></td></tr></table></figure>
+                                        <h2 id="1-PHPのインストール"><a href="#1-PHPのインストール" class="headerlink" title="1. PHPのインストール"></a>1. PHPのインストール</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.php.net/downloads">PHP の公式サイト</a>で PHP の言語パックをダウンロードする(特に仮想マシンでPHP開発環境を整えた人もローカルマシンでPHPをインストールする必要がある)。<ul>
+<li>各々の OS 環境に応じて選択してください。<ul>
+<li><strong>Linux</strong> と <strong>Mac</strong> は <code>tar.xx</code>を使えるらしい。</li>
+<li>私は <strong>Windows</strong> 環境なので <code>Windows downloads</code> を選択する。</li>
+</ul>
+</li>
+<li>保存場所のパスはアルファベットのみのがお薦め。</li>
+</ul>
+</li>
+<li>ダウンロードファイルを解凍し、そのままでインストールが完了する。</li>
+<li>環境変数の PATH に PHP のパスを入れる。<ul>
+<li>Linux と Mac OS の方は<a target="_blank" rel="noopener" href="https://uxmilk.jp/52370" title="【export】Linuxで環境変数を設定・削除するコマンド"><em>参考資料 3</em></a> を参照してください。</li>
+<li>Windows OS の方は以下の様にする。<ol>
+<li><code>Win + S</code> で Cortana を呼び出し、<code>環境変数を編集</code>を入力して選択する。</li>
+<li><strong>システム環境変数</strong>の項目に <code>Path</code> を選択し<strong>編集</strong>を押す。</li>
+<li><strong>新規</strong>を押して PHP パックまでのパス <code>xx/xx/php</code> を入力する。</li>
+<li><strong>OK</strong> を押して確定する。</li>
+</ol>
+</li>
+<li>コマンドプロンプトに <code>php -v</code> を入力して実行し、バージョン情報が正確に表示されれば成功である。</li>
+</ul>
+</li>
+<li>VSCode の設定ファイル <code>Settings.json</code> に以下のコードを入力してPHPパックと繋げる。</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;php.suggest.basic&quot;: false, //VSCode デフォルトの候補提示昨日を無効にする</span><br><span class="line">&quot;php.validate.executablePath&quot;: &quot;xx/xx/php.exe&quot;, //php ファイルのパス</span><br></pre></td></tr></table></figure>
 
-<h2 id="使用hexo寫博文的流程"><a href="#使用hexo寫博文的流程" class="headerlink" title="使用hexo寫博文的流程"></a>使用hexo寫博文的流程</h2><h3 id="以下命令輸入在命令行終端中"><a href="#以下命令輸入在命令行終端中" class="headerlink" title="以下命令輸入在命令行終端中"></a>以下命令輸入在命令行終端中</h3><h4 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h4><h3 id="一、安裝Node-js"><a href="#一、安裝Node-js" class="headerlink" title="一、安裝Node.js"></a>一、安裝Node.js</h3><ol>
-<li><p>進入”<a target="_blank" rel="noopener" href="https://nodejs.org/&quot;%E4%B8%8B%E8%BC%89%E6%8E%A8%E8%96%A6%E7%89%88">https://nodejs.org/&quot;下載推薦版</a></p>
+<h3 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h3><hr>
+<h2 id="2-拡張機能のインストール"><a href="#2-拡張機能のインストール" class="headerlink" title="2. 拡張機能のインストール"></a>2. 拡張機能のインストール</h2><ol>
+<li><p>PHP コード自動補完拡張機能 <code>PHP IntelliSense</code> をインストールする。</p>
 <ul>
-<li>除了修改路徑以外全部默認</li>
-<li>由Node包和npw包組成</li>
+<li><p>VSCode の EXTENSIONS（拡張機能）に 名前を検索してインストールする。</p>
+</li>
+<li><p>又は以下のコードを VSCode のコマンドパレット（Ctrl + Shift + P）にコピペして実行すうる。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ext install felixfbecker.php-intellisense</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
-<li><p>在命令行終端中使用查看版本命令確認是否安裝成功</p>
+<li><p>PHP デバグ拡張機能 <code>PHP Debug</code> をインストールする。</p>
 <ul>
-<li><code>node -v</code></li>
-<li><code>npm -v</code></li>
-</ul>
+<li><p>VSCode の EXTENSIONS（拡張機能）に 名前を検索してインストールする。</p>
 </li>
-</ol>
-<h3 id="二、使用hexo框架創建博客"><a href="#二、使用hexo框架創建博客" class="headerlink" title="二、使用hexo框架創建博客"></a>二、使用hexo框架創建博客</h3><ol>
-<li><p>安裝hexo</p>
-<ul>
-<li><code>npm install -g hexo-cli</code></li>
-<li>如連不上外網需設置加速鏡像站詳見參考資料1</li>
-</ul>
-</li>
-<li><p>驗證是否成功安裝</p>
-<ul>
-<li><code>hexo -v</code>：查看版本</li>
-</ul>
-</li>
-<li><p>生成一個供存放博客框架的文件夾</p>
-<ul>
-<li><code>mkdir 文件夾名</code></li>
-<li>對建立的博客有任何不滿都可以删除這個文件來重來</li>
-</ul>
-</li>
-<li><p>建立一個框架（網站）</p>
-<ul>
-<li><code>hexo init</code></li>
-</ul>
-</li>
-<li><p>建立一個本地服務（打開hexo）</p>
-<ul>
-<li><code>hexo server</code></li>
-<li>僅作預覽用</li>
-<li>需要使用Ctrl+C關閉</li>
-</ul>
-</li>
-<li><p>新建博文</p>
-<ul>
-<li><code>hexo new &quot;文件名&quot;</code></li>
-</ul>
-</li>
-<li><p>清理緩存</p>
-<ul>
-<li><code>hexo clean</code></li>
-</ul>
-</li>
-<li><p>生成文件</p>
-<ul>
-<li><code>hexo generate</code></li>
-</ul>
-</li>
-</ol>
-<h3 id="三、使用GitHub作爲博客的倉庫"><a href="#三、使用GitHub作爲博客的倉庫" class="headerlink" title="三、使用GitHub作爲博客的倉庫"></a>三、使用GitHub作爲博客的倉庫</h3><ol>
-<li><p>在GitHub中新建倉庫</p>
-<ul>
-<li>倉庫名必須爲“GitHub用戸名.github.io”</li>
-</ul>
-</li>
-<li><p>安裝hexo的git插件</p>
-<ul>
-<li><code>npm install --save hexo-deployer-git</code></li>
-</ul>
-</li>
-<li><p>修改配置文件</p>
-<ul>
-<li>_config.yml</li>
-<li>在博客的本地根目録下</li>
-</ul>
-<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">type: &#x27;git&#x27;</span><br><span class="line">repo: &#x27;https://github.com/SetsuikiHyoryu/SetsuikiHyoryu.   github.io.git&#x27;</span><br><span class="line">branch: &#x27;master&#x27;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>部屬到遠端</p>
-<ul>
-<li><code>hexo deploy</code></li>
-<li>過程中需要登入GitHub帳號</li>
-<li>如果想反映修改過的内容必須每次調用clean, generate, deploy指令</li>
-<li>初次部屬之後以的部屬不需要再次輸入帳號密碼</li>
-</ul>
-</li>
-</ol>
-<h3 id="四、更換主題"><a href="#四、更換主題" class="headerlink" title="四、更換主題"></a>四、更換主題</h3><ol>
-<li><p>下載主題</p>
-<ul>
-<li><code>git clone http/ssh地址 目標文件夾</code></li>
-</ul>
-</li>
-<li><p>修改_config.yml配置文件</p>
- <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: landscape -&gt; yilia</span><br></pre></td></tr></table></figure>
+<li><p>又は以下のコードを VSCode のコマンドパレット（Ctrl + Shift + P）にコピペして実行すうる。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ext install felixfbecker.php-debug</span><br></pre></td></tr></table></figure>
 
+</li>
+</ul>
 </li>
 </ol>
 <hr>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ol>
-<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty" title="BV1Yb411a7ty">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a></p>
+<h2 id="3-ローカルPHPパックに拡張機能xdebugをインストールする"><a href="#3-ローカルPHPパックに拡張機能xdebugをインストールする" class="headerlink" title="3. ローカルPHPパックに拡張機能xdebugをインストールする"></a>3. ローカルPHPパックに拡張機能xdebugをインストールする</h2><ul>
+<li><p>Linux と Mac OS の方は<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av71103179/" title="【教程】配置vscode的PHP自动补全提示与远程调试模式Xdebug"><em>参考資料 1</em></a> を参照してください。</p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands.html" title="https://hexo.io/zh-cn/docs/commands.html">hexo指令</a></p>
+<li><p>Windows OS の方は以下の様にする。</p>
+<ol>
+<li><p>コマンドプロンプトで <code>php -i</code> 命令を実行し、phpinfo の情報を得る。</p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://qiita.com/oreo/items/82183bfbaac69971917f" title="https://qiita.com/oreo/items/82183bfbaac69971917f">Markdown語法</a></p>
+<li><p>得たphpinfoをコピーして <a target="_blank" rel="noopener" href="https://xdebug.org/wizard" title="Installation Wizard">xdebug 公式サイトのバージョン確認ページ</a>に貼る。</p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia">hexo主題yilia</a></p>
+<li><p><code>Analyse my phpinfo() output</code> ボタンを押して算出された xdebug パック をダウンロードする。</p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo主題站</a></p>
+<li><p>xdebug パックを解凍し、中の <code>dll</code> ファイルを php の拡張機能フォルダ <code>xx/php/ext</code> に移動させる。</p>
 </li>
+<li><p>phpの配置ファイル <code>xx/php/php.ini-development</code> を <code>php.ini</code> に<strong>名前を変更</strong>し最後の行から以下のコードを入力する。</p>
+<ul>
+<li><code>php.ini-development</code> の他に同じ場所 <code>php.ini-production</code> 配置ファイルもあるが、クライアント用のファイルでエラーが表示されないように設定されているそうだ。</li>
+</ul>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 私は全て属性の意味合いを把握していません。</span></span><br><span class="line"><span class="section">[XDebug]</span></span><br><span class="line"><span class="attr">zend_extension</span> =  <span class="string">&quot;xxx\php\ext\php_xdebug.dll&quot;</span> <span class="comment"># zend_extensionエンジンの選択、パスは xdebug のを入れる。</span></span><br><span class="line"><span class="attr">xdebug.profiler_append</span> = <span class="number">0</span></span><br><span class="line"><span class="attr">xdebug.profiler_enable</span> = <span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.profiler_enable_trigger</span> = <span class="number">0</span></span><br><span class="line"><span class="attr">xdebug.profiler_output_dir</span> =  <span class="string">&quot;xxx\temp&quot;</span> <span class="comment"># 自分で一時ファイルのフォルダを作る。</span></span><br><span class="line"><span class="attr">xdebug.profiler_output_name</span> = <span class="string">&quot;cachegrind.out.%t-%s&quot;</span></span><br><span class="line"><span class="attr">xdebug.remote_enable</span> = <span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.remote_autostart</span> = <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="4-実際にデバグを試みる"><a href="#4-実際にデバグを試みる" class="headerlink" title="4. 実際にデバグを試みる"></a>4. 実際にデバグを試みる</h2><h3 id="4-1-環境の設置"><a href="#4-1-環境の設置" class="headerlink" title="4.1. 環境の設置"></a>4.1. 環境の設置</h3><ol>
+<li><p>サイドバーの <strong>Run</strong> を選択する。</p>
+</li>
+<li><p><code>create a launch.json file</code> をクリックする。</p>
+<ul>
+<li>プロジェクトフォルダを開いていない状態は <code>Open a flolder and create a launch.json file</code> という表記で、 <code>Open a flolder</code> をクリックしてください。</li>
+</ul>
+</li>
+<li><p>生成された <code>.vscode/launch.json</code> をそのまま保存し、サイドバーの <strong>Run</strong> が以下の図の様になっているはず。</p>
+<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_After_Launch.jpg" alt="4.1.3. Run_After_Launch" title="4.1.3. Run"></p>
+</li>
+<li><p><strong>Run</strong> の最上層のリストをクリックすると以下の図の様になる。</p>
+<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Run_List.jpg" alt="4.1.4. Run_List" title="4.1.4. List"></p>
+<ul>
+<li><code>Listen for XDebug</code> は遠距離サーバーでのデバク方法。</li>
+<li><code>Launch currently open script</code> はローカルでのデバグ方法。</li>
+</ul>
+</li>
+</ol>
+<h3 id="4-2-ローカルでのデバグ方法"><a href="#4-2-ローカルでのデバグ方法" class="headerlink" title="4.2. ローカルでのデバグ方法"></a>4.2. ローカルでのデバグ方法</h3><ol>
+<li><p><strong>Run</strong> の最上層のリストから <code>Launch currently open script</code> を選択する。</p>
+</li>
+<li><p>テスト用の PHP ファイルを開く。</p>
+</li>
+<li><p>デバグしたい行の行番号の外をクリックする。赤い点が付与される。</p>
+<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/PHP_Test_File.jpg" alt="4.2.3. PHP_Test_File" title="4.2.3. Test_File"></p>
+<ul>
+<li>関数をデバグする場合、その行に赤い点を付けると表示されるのにデバグ開始後にもう一歩進む必要がある。</li>
+<li>赤い点の位置をもう一回押すと赤い点を消せる。</li>
+</ul>
+</li>
+<li><p>リストの左にある矢印アイコンを押してデバグが開始される。</p>
+<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Start.jpg" alt="4.2.4 Start" title="4.2.4. Start">  </p>
+<ul>
+<li><p>画面でアクティブなファイルのみデバグされるので、複数ファイルの場合、実行するコードのあるファイルでデバグしてください。</p>
+</li>
+<li><p>赤い点を付けないで実行するとファイル全体がデバグされる。</p>
+</li>
+<li><p>デバグの結果は <strong>DEBUG CONSOLE</strong> に表示される。</p>
+<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Screen.jpg" alt="4.2.4. Debug_Screen" title="4.2.4. Debug_Screen">  </p>
+</li>
+<li><p>ファイルが開けれた最初のデバグは <strong>DEBUG CONSOLE</strong> は自動にポップアップするが、ファイルが開けれて <strong>DEBUG CONSOLE</strong> を閉じた状態で二度目以降のデバグは <strong>DEBUG CONSOLE</strong> が自動にポップアップされない（解決方法を検索したがまだ見付けていない）。</p>
+<ul>
+<li><p>手動で <strong>DEBUG CONSOLE</strong> を開くにはリストの右にある虫アイコンを押すことで実現できる。</p>
+<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Console.jpg" alt="4.2.4. Debug_Console" title="4.2.4. Debug_Console"></p>
+</li>
+</ul>
+</li>
+<li><p>デバグ開始後、完了していない限り、ファイル画面の上方に下の図の様なデバグのコントロールバーが出る。ステップイン、ステップインアウト等の操作ができる。</p>
+<p><img src="https://raw.githubusercontent.com/SetsuikiHyoryu/StudyNote-Company/master/img/php_local_debug/Debug_Bar.jpg" alt="4.2.4. Debug_Bar" title="4.2.4. Debug_Bar"></p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="4-3-遠距離でのデバグ方法（未実証、参考資料-1-18-10-からの参照を推奨する）"><a href="#4-3-遠距離でのデバグ方法（未実証、参考資料-1-18-10-からの参照を推奨する）" class="headerlink" title="4.3. 遠距離でのデバグ方法（未実証、参考資料 1  18:10 からの参照を推奨する）"></a>4.3. 遠距離でのデバグ方法（未実証、<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av71103179/" title="【教程】配置vscode的PHP自动补全提示与远程调试模式Xdebug"><em>参考資料 1</em></a>  18:10 からの参照を推奨する）</h3><ol>
+<li><p>仮想マシンやサーバー内の PHP 配置ファイル <code>/etc/php/バージョン（通常は数字のみ）/fpm/php.ini</code> を訂正する。</p>
+<ul>
+<li><p>ローカルPC内のファイルではないことを注意してください！</p>
+</li>
+<li><p>以下のコードを入力する。</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 私は全て属性の意味合いを把握していません。</span></span><br><span class="line"><span class="section">[XDebug]</span></span><br><span class="line"><span class="attr">xdebug.remote_enable</span> = <span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.remote_autostart</span> = <span class="number">1</span></span><br><span class="line">xdebug.romote_host = # ローカル PC の IP アドレス</span><br><span class="line"><span class="attr">xdebug.remote_port</span> = <span class="number">9000</span> <span class="comment"># launch.json で定義されたport、VSCodeにリッスンされる。</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>VSCode のサイドバー <strong>Run</strong> の最上層のリストから <code>Listen for XDebug</code> を選択する。</p>
+</li>
+<li><p>以降は 4.2.2 からの手順と同じ。</p>
+</li>
+</ol>
+<ul>
+<li>原理は容器内の PHP は受け取った URL 情報を ローカル PC の IP を通じて port 9000 でローカル PC に発信する。port 9000 はVSCodeにレッスンされているので発信された情報受け取れる。</li>
+</ul>
+<hr>
+<h2 id="参考資料"><a href="#参考資料" class="headerlink" title="参考資料"></a>参考資料</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av71103179/" title="【教程】配置vscode的PHP自动补全提示与远程调试模式Xdebug">【教程】配置vscode的PHP自动补全提示与远程调试模式Xdebug</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/zeng133/article/details/83820890" title="Xdebug----Failed loading">Xdebug—-Failed loading</a></li>
+<li><a target="_blank" rel="noopener" href="https://uxmilk.jp/52370" title="【export】Linuxで環境変数を設定・削除するコマンド">【export】Linuxで環境変数を設定・削除するコマンド</a></li>
 </ol>
 
                                             
@@ -401,8 +450,8 @@
                     </li>
                     <li>
                         <strong>本文鏈接：</strong>
-                        <a href="https://setsuikihyoryu.github.io/2020/10/03/My-First-Document/" title="My First Document" target="_blank">
-                            https://setsuikihyoryu.github.io/2020/10/03/My-First-Document/
+                        <a href="https://setsuikihyoryu.github.io/2020/10/16/VSCodeでサーバー環境無しでのPHPデバグ方法/" title="VSCodeでサーバー環境無しでのPHPデバグ方法" target="_blank">
+                            https://setsuikihyoryu.github.io/2020/10/16/VSCodeでサーバー環境無しでのPHPデバグ方法/
                         </a>
                     </li>
                     
@@ -425,11 +474,19 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技術</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">技術ノート</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Test</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">環境設定</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">デバグ</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">手順書</a>
         		</li>
       		
 		</ul>
@@ -485,7 +542,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://setsuikihyoryu.github.io/2020/10/03/My-First-Document/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://setsuikihyoryu.github.io/2020/10/16/VSCode%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%92%B0%E5%A2%83%E7%84%A1%E3%81%97%E3%81%A7%E3%81%AEPHP%E3%83%87%E3%83%90%E3%82%B0%E6%96%B9%E6%B3%95/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -500,18 +557,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/10/03/yilia%E4%B8%BB%E9%A1%8C%E7%9A%84%E5%8F%83%E6%95%B8%E8%A8%AD%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          yilia主題的參數設置
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/10/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2020/10/08/%E5%8B%95%E7%94%BB%E4%BD%9C%E6%88%90%E6%89%8B%E9%A0%86%E6%9B%B8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">動画作成手順書</div>
       <i class="icon-circle-right"></i>
     </a>
   

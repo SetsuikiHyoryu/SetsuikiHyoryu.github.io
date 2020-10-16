@@ -193,6 +193,134 @@
             
 
   
+    <article id="post-VSCodeでサーバー環境無しでのPHPデバグ方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/10/16/VSCode%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%92%B0%E5%A2%83%E7%84%A1%E3%81%97%E3%81%A7%E3%81%AEPHP%E3%83%87%E3%83%90%E3%82%B0%E6%96%B9%E6%B3%95/" target="_blank">VSCodeでサーバー環境無しでのPHPデバグ方法</a>
+  
+    </h1>
+  
+
+
+                    
+                        
+<a href="/2020/10/16/VSCode%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%92%B0%E5%A2%83%E7%84%A1%E3%81%97%E3%81%A7%E3%81%AEPHP%E3%83%87%E3%83%90%E3%82%B0%E6%96%B9%E6%B3%95/" class="archive-article-date">
+        <time datetime="2020-10-16T07:35:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-16</time>
+</a>
+
+                            
+                                
+                                    
+
+                                        
+            </header>
+            
+                <div class="article-entry" itemprop="articleBody">
+                    
+                        <h2 id="1-PHPのインストール"><a href="#1-PHPのインストール" class="headerlink" title="1. PHPのインストール"></a>1. PHPのインストール</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.php.net/downloads">PHP の公式サイト</a>で PHP の言語パックをダウンロードする(特に仮想マシンでPHP開発環境を整えた人もローカルマシンでPHPをインストールする必要がある)。<ul>
+<li>各々の OS 環境に応じて選択してください。<ul>
+<li><strong>Linux</strong> と <strong>Mac</strong> は <code>tar.xx</code>を使えるらしい。</li>
+<li>私は <strong>Windows</strong> 環境なので <code>Windows downloads</code> を選択する。</li>
+</ul>
+</li>
+<li>保存場所のパスはアルファベットのみのがお薦め。</li>
+</ul>
+</li>
+<li>ダウンロードファイルを解凍し、そのままでインストールが完了する。</li>
+<li>環境変数の PATH に PHP のパスを入れる。<ul>
+<li>Linux と Mac OS の方は<a target="_blank" rel="noopener" href="https://uxmilk.jp/52370" title="【export】Linuxで環境変数を設定・削除するコマンド"><em>参考資料 3</em></a> を参照してください。</li>
+<li>Windows OS の方は以下の様にする。<ol>
+<li><code>Win + S</code> で Cortana を呼び出し、<code>環境変数を編集</code>を入力して選択する。</li>
+<li><strong>システム環境変数</strong>の項目に <code>Path</code> を選択し<strong>編集</strong>を押す。</li>
+<li><strong>新規</strong>を押して PHP パックまでのパス <code>xx/xx/php</code> を入力する。</li>
+<li><strong>OK</strong> を押して確定する。</li>
+</ol>
+</li>
+<li>コマンドプロンプトに <code>php -v</code> を入力して実行し、バージョン情報が正確に表示されれば成功である。</li>
+</ul>
+</li>
+<li>VSCode の設定ファイル <code>Settings.json</code> に以下のコードを入力してPHPパックと繋げる。</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;php.suggest.basic&quot;: false, //VSCode デフォルトの候補提示昨日を無効にする</span><br><span class="line">&quot;php.validate.executablePath&quot;: &quot;xx/xx/php.exe&quot;, //php ファイルのパス</span><br></pre></td></tr></table></figure>
+
+<h3 id=""><a href="#" class="headerlink" title=""></a>
+                            
+                                <a class="article-more-a" href="/2020/10/16/VSCode%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%92%B0%E5%A2%83%E7%84%A1%E3%81%97%E3%81%A7%E3%81%AEPHP%E3%83%87%E3%83%90%E3%82%B0%E6%96%B9%E6%B3%95/#more">
+                                    more >></a>
+                                
+                                    
+
+                                                
+
+        
+
+                </div>
+                <div class="article-info article-info-index">
+                    
+                            
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">技術ノート</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">環境設定</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">デバグ</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">手順書</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+                                
+
+                                    
+                                        <p class="article-more-link">
+                                            <a class="article-more-a" href="/2020/10/16/VSCode%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%92%B0%E5%A2%83%E7%84%A1%E3%81%97%E3%81%A7%E3%81%AEPHP%E3%83%87%E3%83%90%E3%82%B0%E6%96%B9%E6%B3%95/" target="_blank">
+                                                展開全文 >></a>
+                                        </p>
+                                        
+
+                                            
+                                                        <div class=" clearfix "></div>
+                </div>
+                </div>
+</article>
+
+            <aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+                
+  
     <article id="post-動画作成手順書" class="article article-type-post  article-index" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -262,11 +390,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">動画作成</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">手順書</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">手順書</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">動画作成</a>
         		</li>
       		
 		</ul>
@@ -1001,6 +1129,22 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">技術ノート</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">環境設定</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">デバグ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">手順書</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">技術</a>
               </li>
              
@@ -1013,23 +1157,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">技術ノート</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">環境設定</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">最適化</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">動画作成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">手順書</a>
               </li>
              
               <li class="article-tag-list-item">
