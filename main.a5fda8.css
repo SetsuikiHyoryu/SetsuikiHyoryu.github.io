@@ -884,9 +884,10 @@ html {
 
 /* 二創作者寫的頭像旋轉功能，未作說明，我寫下此說明 by冰龍 */
 
-.left-col #header .profilepic img:hover {
+
+/* .left-col #header .profilepic img:hover {
     transform: rotate(1turn)
-}
+} */
 
 .left-col #header .header-author {
     text-align: center;
