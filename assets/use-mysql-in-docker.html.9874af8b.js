@@ -1,0 +1,36 @@
+import{r as e,o as t,c as l,a as n,b as o,F as p,d as s,e as c}from"./app.31e768e6.js";import{_ as r}from"./plugin-vue_export-helper.21dcd24c.js";const i={},u=n("h1",{id:"\u5728-docker-\u4E0A\u4F7F\u7528-mongodb",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#\u5728-docker-\u4E0A\u4F7F\u7528-mongodb","aria-hidden":"true"},"#"),s(" \u5728 Docker \u4E0A\u4F7F\u7528 MongoDB")],-1),m=n("h2",{id:"\u53C2\u8003\u89C6\u9891",tabindex:"-1"},[n("a",{class:"header-anchor",href:"#\u53C2\u8003\u89C6\u9891","aria-hidden":"true"},"#"),s(" \u53C2\u8003\u89C6\u9891")],-1),d={href:"https://www.youtube.com/watch?v=0qNTbkFfR4U",target:"_blank",rel:"noopener noreferrer"},b=s("Docker \u3067 MySQL \u306E\u6700\u5C0F\u69CB\u6210\u3092\u69CB\u7BC9\u3057\u307E\u3059\u3002\u30C7\u30FC\u30BF\u6C38\u7D9A\u5316\u8A2D\u5B9A\u3082\u3042\u308A"),k=c(`<h2 id="_1-\u5728\u4E3B\u673A\u5EFA\u7ACB\u4FDD\u5B58\u6570\u636E\u5E93\u7684\u76EE\u5F55" tabindex="-1"><a class="header-anchor" href="#_1-\u5728\u4E3B\u673A\u5EFA\u7ACB\u4FDD\u5B58\u6570\u636E\u5E93\u7684\u76EE\u5F55" aria-hidden="true">#</a> 1. \u5728\u4E3B\u673A\u5EFA\u7ACB\u4FDD\u5B58\u6570\u636E\u5E93\u7684\u76EE\u5F55</h2><table><thead><tr><th style="text-align:left;">\u76EE\u5F55</th><th style="text-align:left;">\u8BF4\u660E</th></tr></thead><tbody><tr><td style="text-align:left;">mysql</td><td style="text-align:left;">\u6839\u76EE\u5F55</td></tr><tr><td style="text-align:left;">mysql/data</td><td style="text-align:left;">\u6570\u636E\u5E93\u4FDD\u5B58\u6587\u4EF6\u5939</td></tr></tbody></table><h2 id="_2-\u521B\u5EFA-docker-compose-yml-\u6587\u4EF6" tabindex="-1"><a class="header-anchor" href="#_2-\u521B\u5EFA-docker-compose-yml-\u6587\u4EF6" aria-hidden="true">#</a> 2. \u521B\u5EFA docker-compose.yml \u6587\u4EF6</h2><div class="language-yaml ext-yml line-numbers-mode"><pre class="language-yaml"><code><span class="token comment"># mysql/docker-compose.yml</span>
+
+<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3.9&quot;</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">mysql</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> mysql<span class="token punctuation">:</span>8.0.31
+    <span class="token key atrule">port</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 3306<span class="token punctuation">:</span><span class="token number">3306</span>
+      <span class="token punctuation">-</span> 33060<span class="token punctuation">:</span><span class="token number">33060</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token comment"># Need to set password for root user.</span>
+      <span class="token punctuation">-</span> MYSQL_ROOT_PASSWORD=password
+      <span class="token comment"># Time zone.</span>
+      <span class="token punctuation">-</span> TZ=Asia/Tokyo
+    <span class="token comment"># \u4F7F\u7528\u5377\u6620\u5C04\u672C\u5730\u76EE\u5F55\u4EE5\u4FDD\u5B58\u6570\u636E</span>
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> ./data<span class="token punctuation">:</span>/var/lib/mysql
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="_3-\u5728-docker-\u4E2D\u542F\u52A8\u670D\u52A1" tabindex="-1"><a class="header-anchor" href="#_3-\u5728-docker-\u4E2D\u542F\u52A8\u670D\u52A1" aria-hidden="true">#</a> 3. \u5728 docker \u4E2D\u542F\u52A8\u670D\u52A1</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># \u7F16\u8BD1\u670D\u52A1</span>
+<span class="token function">docker-compose</span> build
+<span class="token comment"># \u542F\u52A8\u5BB9\u5668 --detach, -d: Run containers in the background.</span>
+<span class="token function">docker-compose</span> up --detach
+<span class="token comment"># \u67E5\u8BE2\u5BB9\u5668\u72B6\u6001</span>
+<span class="token function">docker-compose</span> <span class="token function">ps</span>
+<span class="token comment"># \u67E5\u770B\u5BB9\u5668\u8F93\u51FA\u65E5\u5FD7 --follow, -f: Follow log outpu.</span>
+<span class="token function">docker-compose</span> logs --follow mongo
+<span class="token comment"># \u505C\u6B62\u5BB9\u5668</span>
+<span class="token function">docker-compose</span> stop
+<span class="token comment"># \u505C\u6B62\u5BB9\u5668\u5E76\u5220\u9664\u5BB9\u5668\u53CA\u7F51\u7EDC</span>
+<span class="token function">docker-compose</span> down
+<span class="token comment"># \u505C\u6B62\u5BB9\u5668\u5E76\u5220\u9664\u5BB9\u5668\u3001\u7F51\u7EDC\u3001\u955C\u50CF</span>
+<span class="token function">docker-compose</span> down --rmi all
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="_4-\u5728\u5BB9\u5668\u4E2D\u8BBF\u95EE-mysql" tabindex="-1"><a class="header-anchor" href="#_4-\u5728\u5BB9\u5668\u4E2D\u8BBF\u95EE-mysql" aria-hidden="true">#</a> 4. \u5728\u5BB9\u5668\u4E2D\u8BBF\u95EE Mysql</h2><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># Mysql is server name in \`docker-compose.yml\`.</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it mysql <span class="token function">bash</span>
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>then</p><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code>mysql -u root -ppassword
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div>`,10);function h(y,f){const a=e("ExternalLinkIcon");return t(),l(p,null,[u,m,n("p",null,[n("a",d,[b,o(a)])]),k],64)}var v=r(i,[["render",h]]);export{v as default};
