@@ -1,4 +1,6 @@
-import useNavigation from './use-navigation'
 import useSidebar from './use-sidebar'
+import useHead from './use-head'
 
-export { useNavigation, useSidebar }
+export { useSidebar, useHead }
+
+export { useChineseNavigation, useJapaneseNavigation } from './use-navigation'
