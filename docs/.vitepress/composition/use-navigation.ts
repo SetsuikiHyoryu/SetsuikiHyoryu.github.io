@@ -1,7 +1,9 @@
 import type { DefaultTheme } from 'vitepress'
 
-export default function useNavigation(): DefaultTheme.NavItem[] {
+export function useChineseNavigation(): DefaultTheme.NavItem[] {
   return [
+    { text: '首页', link: '/zh/' },
+
     {
       text: '文章',
       items: [
@@ -16,6 +18,29 @@ export default function useNavigation(): DefaultTheme.NavItem[] {
         },
 
         { text: '马克思主义', items: [] },
+      ],
+    },
+  ]
+}
+
+export function useJapaneseNavigation(): DefaultTheme.NavItem[] {
+  return [
+    { text: 'トップ', link: '/ja/' },
+
+    {
+      text: '文章',
+      items: [
+        {
+          text: 'プログラミング',
+          items: [
+            {
+              text: 'ソース管理ツール',
+              link: '/ja/programming/source-manage-tool/',
+            },
+          ],
+        },
+
+        { text: 'マルクス主義', items: [] },
       ],
     },
   ]
