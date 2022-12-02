@@ -10,8 +10,7 @@ export default function useNavigation(): DefaultTheme.NavItem[] {
           items: [
             {
               text: '资源管理工具',
-              link: '/programming/source-manage-tool/',
-              activeMatch: '/programming/source-manage-tool/',
+              link: '/zh/programming/source-manage-tool/',
             },
           ],
         },
