@@ -3,6 +3,7 @@ import { useNavigation, useSidebar } from './composition'
 
 export default defineConfig({
   base: '/',
+  srcDir: './language', // relative to project root(vitepress-blog/docs/).
   lang: 'zh-CN',
   title: '冰龍與雪風的工作室',
   description: '冰龍與雪風的博客',
@@ -17,11 +18,13 @@ export default defineConfig({
     '/': {
       lang: 'zh-CN',
       title: '冰龍與雪風的工作室',
+      description: '冰龍與雪風的博客',
     },
 
     '/ja/': {
       lang: 'ja',
       title: '冰龍と雪風のアトリエ',
+      description: '冰龍と雪風のブログ',
     },
   },
 
