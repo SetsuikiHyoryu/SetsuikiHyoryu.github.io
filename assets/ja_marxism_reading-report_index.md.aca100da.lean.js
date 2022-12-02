@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app.c4de790b.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ja/marxism/reading-report/index.md","lastUpdated":1669974426000}'),r={name:"ja/marxism/reading-report/index.md"};function n(o,s,d,i,c,p){return a(),t("div")}const x=e(r,[["render",n]]);export{_ as __pageData,x as default};

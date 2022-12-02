@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app.b8fabf9c.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ja/marxism/reading-note/index.md","lastUpdated":1669974426000}'),n={name:"ja/marxism/reading-note/index.md"};function r(o,s,d,i,c,m){return a(),t("div")}const x=e(n,[["render",r]]);export{_ as __pageData,x as default};

@@ -1,1 +1,0 @@
-import{d as e,u as t,c as a,o}from"./app.c4de790b.js";const i=JSON.parse('{"title":"HOME","description":"","frontmatter":{"title":"HOME"},"headers":[],"relativePath":"index.md","lastUpdated":1669974426000}'),r={name:"index.md"},p=e({...r,setup(n){return t().go("/zh/"),(c,d)=>(o(),a("div"))}});export{i as __pageData,p as default};

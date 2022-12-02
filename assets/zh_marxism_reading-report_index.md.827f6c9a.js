@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./app.b8fabf9c.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"zh/marxism/reading-report/index.md","lastUpdated":1669974426000}'),a={name:"zh/marxism/reading-report/index.md"};function n(o,s,d,i,c,p){return r(),t("div")}const x=e(a,[["render",n]]);export{_ as __pageData,x as default};
