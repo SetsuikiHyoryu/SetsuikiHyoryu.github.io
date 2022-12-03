@@ -128,7 +128,7 @@ function useMarxismReadingNoteSidebar(): DefaultTheme.Sidebar {
         items: [
           {
             text: '国家与革命',
-            link: `${ROOT_PATH_CHINESE}lenin_the-state-and-revolution`,
+            link: `${ROOT_PATH_CHINESE}lenin/the-state-and-revolution`,
           },
         ],
       },

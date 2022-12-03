@@ -2,4 +2,4 @@
 
 ## 列宁
 
-- [国家与革命](./lenin_the-state-and-revolution.md)
+- [国家与革命](./lenin/the-state-and-revolution.md)
