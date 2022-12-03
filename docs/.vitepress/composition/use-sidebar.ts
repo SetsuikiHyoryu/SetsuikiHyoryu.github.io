@@ -3,8 +3,13 @@ import type { DefaultTheme } from 'vitepress'
 export default function useSidebar(): DefaultTheme.Sidebar {
   return {
     ...useHomePageSidebar(),
+
+    // 编程
     ...useProgrammingSourceManageToolSidebar(),
-    ...useMarxismReadingNote(),
+
+    // 马克思主义
+    ...useMarxismReadingNoteSidebar(),
+    ...useMarxismReadingReportSidebar(),
   }
 }
 
@@ -102,18 +107,57 @@ function useProgrammingSourceManageToolSidebar(): DefaultTheme.Sidebar {
   }
 }
 
-function useMarxismReadingNote(): DefaultTheme.Sidebar {
+function useMarxismReadingNoteSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH_CHINESE = '/zh/marxism/reading-note/'
+  const ROOT_PATH_JAPANESE = '/ja/marxism/reading-note/'
+
   return {
-    '/zh/marxism/reading-note': [
+    [ROOT_PATH_CHINESE]: [
       {
         text: '马克思主义 - 读书笔记',
+        items: [
+          { text: '回到首页', link: '/zh/' },
+          { text: '读书笔记目录', link: ROOT_PATH_CHINESE },
+        ],
+      },
+
+      {
+        text: '列宁',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: '国家与革命',
+            link: `${ROOT_PATH_CHINESE}lenin_the-state-and-revolution`,
+          },
+        ],
+      },
+    ],
+
+    [ROOT_PATH_JAPANESE]: [
+      {
+        text: 'マルクス主義 - 読書ノート',
+        items: [
+          { text: 'トップに戻る', link: '/ja/' },
+          { text: '読書ノート目録', link: ROOT_PATH_JAPANESE },
+        ],
+      },
+    ],
+  }
+}
+
+function useMarxismReadingReportSidebar(): DefaultTheme.Sidebar {
+  return {
+    '/zh/marxism/reading-report': [
+      {
+        text: '马克思主义 - 读书报告',
         items: [{ text: '上一级', link: '/zh/' }],
       },
     ],
 
-    '/ja/marxism/reading-note': [
+    '/ja/marxism/reading-report': [
       {
-        text: 'マルクス主義 - 読書ノート',
+        text: 'マルクス主義 - 読書レポート',
         items: [{ text: '戻る', link: '/ja/' }],
       },
     ],

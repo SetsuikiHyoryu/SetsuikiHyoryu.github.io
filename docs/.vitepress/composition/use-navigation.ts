@@ -17,7 +17,20 @@ export function useChineseNavigation(): DefaultTheme.NavItem[] {
           ],
         },
 
-        { text: '马克思主义', items: [] },
+        {
+          text: '马克思主义',
+          items: [
+            {
+              text: '读书笔记',
+              link: '/zh/marxism/reading-note/',
+            },
+
+            {
+              text: '读书报告',
+              link: '/zh/marxism/reading-report/',
+            },
+          ],
+        },
       ],
     },
   ]
@@ -40,7 +53,20 @@ export function useJapaneseNavigation(): DefaultTheme.NavItem[] {
           ],
         },
 
-        { text: 'マルクス主義', items: [] },
+        {
+          text: 'マルクス主義',
+          items: [
+            {
+              text: '読書ノート',
+              link: '/ja/marxism/reading-note/',
+            },
+
+            {
+              text: '読書レポート',
+              link: '/ja/marxism/reading-report/',
+            },
+          ],
+        },
       ],
     },
   ]

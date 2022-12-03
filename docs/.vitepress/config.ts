@@ -1,4 +1,7 @@
-import { defineConfig, defineConfigWithTheme } from 'vitepress'
+import type { DefaultTheme } from 'vitepress'
+import type { CustomTheme } from '../types'
+
+import { defineConfigWithTheme } from 'vitepress'
 import {
   useSidebar,
   useHead,
@@ -10,7 +13,7 @@ import {
  * FIXME: Need use defineConfig when i18n type fixed,
  * defineConfigwithTheme is used with custom theme.
  * */
-export default defineConfigWithTheme({
+export default defineConfigWithTheme<DefaultTheme.Config & CustomTheme.Config>({
   base: '/',
   srcDir: './source', // relative to project root(vitepress-blog/docs/).
   lang: 'zh-CN',
