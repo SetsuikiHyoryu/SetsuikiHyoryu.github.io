@@ -5,6 +5,8 @@ export default function useSidebar(): DefaultTheme.Sidebar {
     ...useHomePageSidebar(),
 
     // 编程
+    ...useProgrammingLanguageSidebar(),
+    ...useDatabaseSidebar(),
     ...useProgrammingSourceManageToolSidebar(),
 
     // 马克思主义
@@ -25,6 +27,16 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
         text: '编程',
         collapsible: true,
         items: [
+          {
+            text: '编程语言',
+            link: '/zh/programming/language/',
+          },
+
+          {
+            text: '数据库',
+            link: '/zh/programming/database/',
+          },
+
           {
             text: '资源管理工具',
             link: '/zh/programming/source-manage-tool/',
@@ -60,8 +72,8 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
         collapsible: true,
         items: [
           {
-            text: 'ソース管理ツール',
-            link: '/ja/programming/source-manage-tool/',
+            text: 'プログラミング言語',
+            link: '/ja/programming/language/',
           },
         ],
       },
@@ -85,12 +97,96 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
   }
 }
 
-function useProgrammingSourceManageToolSidebar(): DefaultTheme.Sidebar {
+function useProgrammingLanguageSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH_CHINESE = '/zh/programming/language/'
+  const ROOT_PATH_JAPANESE = '/ja/programming/language/'
+
   return {
-    '/zh/programming/source-manage-tool/': [
+    [ROOT_PATH_CHINESE]: [
+      {
+        text: '编程 - 编程语言',
+        items: [
+          { text: '回到首页', link: '/zh/' },
+          { text: '编程语言目录', link: ROOT_PATH_CHINESE },
+        ],
+      },
+
+      {
+        text: 'C#',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: '命令行单元测试 C#（xUnit）',
+            link: `${ROOT_PATH_CHINESE}c-sharp/c-sharp_unit-test_command-line`,
+          },
+        ],
+      },
+    ],
+
+    [ROOT_PATH_JAPANESE]: [
+      {
+        text: 'プログラミング - プログラミング言語',
+        items: [
+          { text: 'トップに戻る', link: '/ja/' },
+          { text: 'プログラミング言語目録', link: ROOT_PATH_JAPANESE },
+        ],
+      },
+
+      {
+        text: 'C#',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: 'コマンドラインで C# を単体テスト（xUnit）',
+            link: `${ROOT_PATH_JAPANESE}c-sharp/c-sharp_unit-test_command-line`,
+          },
+        ],
+      },
+    ],
+  }
+}
+
+function useDatabaseSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH_CHINESE = '/zh/programming/database/'
+
+  return {
+    [ROOT_PATH_CHINESE]: [
+      {
+        text: '编程 - 数据库',
+        items: [
+          { text: '回到首页', link: '/zh/' },
+          { text: '数据库目录', link: ROOT_PATH_CHINESE },
+        ],
+      },
+
+      {
+        text: 'MySQL',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: '在 Docker 上使用 MySQL',
+            link: `${ROOT_PATH_CHINESE}mysql/use-mysql-on-docker`,
+          },
+        ],
+      },
+    ],
+  }
+}
+
+function useProgrammingSourceManageToolSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH_CHINESE = '/zh/programming/source-manage-tool/'
+
+  return {
+    [ROOT_PATH_CHINESE]: [
       {
         text: '编程 - 资源管理工具',
-        items: [{ text: '上一级', link: '/zh/' }],
+        items: [
+          { text: '回到首页', link: '/zh/' },
+          { text: '资源管理工具目录', link: `${ROOT_PATH_CHINESE}` },
+        ],
       },
 
       {
@@ -99,7 +195,7 @@ function useProgrammingSourceManageToolSidebar(): DefaultTheme.Sidebar {
         items: [
           {
             text: '以 Windows 为主运行开启 WSL2 功能的 docker',
-            link: '/zh/programming/source-manage-tool/docker/use-docker-with-wsl2',
+            link: `${ROOT_PATH_CHINESE}docker/use-docker-with-wsl2`,
           },
         ],
       },

@@ -8,9 +8,10 @@ import {
   useJapaneseNavigation,
   useChineseNavigation,
 } from './composition'
+import { bilibili } from './theme/icons'
 
 /**
- * FIXME: Need use defineConfig when i18n type fixed,
+ * NOTE: Need use defineConfig when i18n type fixed,
  * defineConfigwithTheme is used with custom theme.
  * */
 export default defineConfigWithTheme<DefaultTheme.Config & CustomTheme.Config>({
@@ -67,5 +68,24 @@ export default defineConfigWithTheme<DefaultTheme.Config & CustomTheme.Config>({
     },
 
     sidebar: useSidebar(),
+
+    socialLinks: [
+      {
+        icon: { svg: bilibili },
+        link: 'https://space.bilibili.com/262993',
+      },
+
+      { icon: 'twitter', link: 'https://twitter.com/Setsuiki_Hyoryu' },
+
+      {
+        icon: 'youtube',
+        link: 'https://www.youtube.com/channel/UCUeg9mYxtAp3ZqHfahPAPbQ/featured',
+      },
+
+      {
+        icon: 'github',
+        link: 'https://github.com/SetsuikiHyoryu/SetsuikiHyoryu.github.io',
+      },
+    ],
   },
 })
