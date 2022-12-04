@@ -1,5 +1,6 @@
 ---
 title: HOME
+layout: page
 ---
 
 <script setup lang="ts">

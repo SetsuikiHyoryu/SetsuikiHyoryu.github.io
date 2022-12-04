@@ -1,8 +1,3 @@
----
-lang: ja
-description: 概要
----
-
 # 概要
 
 これは [VitePress](https://vitepress.vuejs.org/) で構築した個人ブログである。

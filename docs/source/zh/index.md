@@ -1,8 +1,3 @@
----
-lang: zh-CH
-description: 简介
----
-
 # 简介
 
 这是一个使用 [VitePress](https://vitepress.vuejs.org/) 构建的个人博客。
