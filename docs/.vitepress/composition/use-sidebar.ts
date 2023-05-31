@@ -8,6 +8,7 @@ export default function useSidebar(): DefaultTheme.Sidebar {
     ...useProgrammingLanguageSidebar(),
     ...useDatabaseSidebar(),
     ...useProgrammingSourceManageToolSidebar(),
+    ...useExamPreparationSidebar(),
 
     // 马克思主义
     ...useMarxismReadingNoteSidebar(),
@@ -75,6 +76,10 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
             text: 'プログラミング言語',
             link: '/ja/programming/language/',
           },
+          {
+            text: '試験準備',
+            link: '/ja/programming/exam-preparation/',
+          },
         ],
       },
 
@@ -97,6 +102,9 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
   }
 }
 
+/**
+ * @description 编程语言边栏
+ */
 function useProgrammingLanguageSidebar(): DefaultTheme.Sidebar {
   const ROOT_PATH_CHINESE = '/zh/programming/language/'
   const ROOT_PATH_JAPANESE = '/ja/programming/language/'
@@ -255,6 +263,60 @@ function useMarxismReadingReportSidebar(): DefaultTheme.Sidebar {
       {
         text: 'マルクス主義 - 読書レポート',
         items: [{ text: '戻る', link: '/ja/' }],
+      },
+    ],
+  }
+}
+
+/**
+ * @description 考试准备边栏
+ */
+function useExamPreparationSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH_CHINESE = '/zh/programming/exam-preparation/'
+  const ROOT_PATH_JAPANESE = '/ja/programming/exam-preparation/'
+
+  return {
+    [ROOT_PATH_CHINESE]: [
+      {
+        text: '编程 - 考试准备',
+        items: [
+          { text: '回到首页', link: '/zh/' },
+          { text: '考前准备目录', link: ROOT_PATH_CHINESE },
+        ],
+      },
+
+      {
+        text: 'Sample',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: 'SampleItem',
+            link: `${ROOT_PATH_CHINESE}c-sharp/c-sharp_unit-test_command-line`,
+          },
+        ],
+      },
+    ],
+
+    [ROOT_PATH_JAPANESE]: [
+      {
+        text: 'プログラミング - 試験準備',
+        items: [
+          { text: 'トップに戻る', link: '/ja/' },
+          { text: '試験準備', link: ROOT_PATH_JAPANESE },
+        ],
+      },
+
+      {
+        text: 'IT パスポート',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: '学習計画',
+            link: `${ROOT_PATH_JAPANESE}it-passport/study-project`,
+          },
+        ],
       },
     ],
   }

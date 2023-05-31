@@ -50,6 +50,10 @@ export function useJapaneseNavigation(): DefaultTheme.NavItem[] {
               text: 'ソース管理ツール',
               link: '/ja/programming/source-manage-tool/',
             },
+            {
+              text: '試験準備',
+              link: '/ja/programming/exam-preparation/',
+            },
           ],
         },
 
