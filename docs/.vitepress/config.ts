@@ -29,14 +29,14 @@ export default defineConfigWithTheme<DefaultTheme.Config & CustomTheme.Config>({
   },
 
   locales: {
-    '/zh/': {
+    zh: {
       lang: 'zh-CN',
       label: '中文',
       title: '冰龍與雪風的工作室',
       description: '冰龍與雪風的博客',
     },
 
-    '/ja/': {
+    ja: {
       lang: 'ja',
       label: '日本語',
       title: '冰龍と雪風のアトリエ',
@@ -57,14 +57,6 @@ export default defineConfigWithTheme<DefaultTheme.Config & CustomTheme.Config>({
       '/ja/': {
         nav: useJapaneseNavigation(),
       },
-    },
-
-    localeLinks: {
-      text: 'Language',
-      items: [
-        { text: '中文', link: '/zh/' },
-        { text: '日本語', link: '/ja/' },
-      ],
     },
 
     sidebar: useSidebar(),

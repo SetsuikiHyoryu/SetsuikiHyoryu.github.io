@@ -8,6 +8,7 @@ export default function useSidebar(): DefaultTheme.Sidebar {
     ...useProgrammingLanguageSidebar(),
     ...useDatabaseSidebar(),
     ...useProgrammingSourceManageToolSidebar(),
+    ...useCodingMemoSidebar(),
     ...useExamPreparationSidebar(),
 
     // 马克思主义
@@ -26,7 +27,6 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
 
       {
         text: '编程',
-        collapsible: true,
         items: [
           {
             text: '编程语言',
@@ -42,12 +42,16 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
             text: '资源管理工具',
             link: '/zh/programming/source-manage-tool/',
           },
+
+          {
+            text: '备忘录',
+            link: '/zh/programming/coding-memo/maven-repository',
+          },
         ],
       },
 
       {
         text: '马克思主义',
-        collapsible: true,
         items: [
           {
             text: '读书笔记',
@@ -70,7 +74,6 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
 
       {
         text: 'プログラミング',
-        collapsible: true,
         items: [
           {
             text: 'プログラミング言語',
@@ -80,12 +83,16 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
             text: '試験準備',
             link: '/ja/programming/exam-preparation/',
           },
+
+          {
+            text: '備忘録',
+            link: '/ja/programming/coding-memo/maven-repository',
+          },
         ],
       },
 
       {
         text: 'マルクス主義',
-        collapsible: true,
         items: [
           {
             text: '読書ノート',
@@ -102,9 +109,7 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
   }
 }
 
-/**
- * @description 编程语言边栏
- */
+/** 编程语言边栏 */
 function useProgrammingLanguageSidebar(): DefaultTheme.Sidebar {
   const ROOT_PATH_CHINESE = '/zh/programming/language/'
   const ROOT_PATH_JAPANESE = '/ja/programming/language/'
@@ -121,7 +126,6 @@ function useProgrammingLanguageSidebar(): DefaultTheme.Sidebar {
 
       {
         text: 'C#',
-        collapsible: true,
         collapsed: false,
         items: [
           {
@@ -143,7 +147,6 @@ function useProgrammingLanguageSidebar(): DefaultTheme.Sidebar {
 
       {
         text: 'C#',
-        collapsible: true,
         collapsed: false,
         items: [
           {
@@ -171,7 +174,6 @@ function useDatabaseSidebar(): DefaultTheme.Sidebar {
 
       {
         text: 'MySQL',
-        collapsible: true,
         collapsed: false,
         items: [
           {
@@ -199,11 +201,54 @@ function useProgrammingSourceManageToolSidebar(): DefaultTheme.Sidebar {
 
       {
         text: 'Docker',
-        collapsible: true,
         items: [
           {
             text: '以 Windows 为主运行开启 WSL2 功能的 docker',
             link: `${ROOT_PATH_CHINESE}docker/use-docker-with-wsl2`,
+          },
+        ],
+      },
+    ],
+  }
+}
+
+/** 编程 - 备忘录边栏 */
+function useCodingMemoSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH_CHINESE = '/zh/programming/coding-memo/'
+  const ROOT_PATH_JAPANESE = '/ja/programming/coding-memo/'
+
+  return {
+    [ROOT_PATH_CHINESE]: [
+      {
+        text: '编程 - 备忘录',
+        items: [{ text: '回到首页', link: '/zh/' }],
+      },
+
+      {
+        text: '配置编程工具',
+        collapsed: false,
+        items: [
+          {
+            text: 'Maven 配置依赖包安装路径',
+            link: `${ROOT_PATH_CHINESE}maven-repository`,
+          },
+        ],
+      },
+    ],
+
+    [ROOT_PATH_JAPANESE]: [
+      {
+        text: 'プログラミング - 備忘録',
+        items: [{ text: 'トップに戻る', link: '/ja/' }],
+      },
+
+      {
+        text: 'プログラミングツールの設定',
+        collapsed: false,
+        items: [
+          {
+            text: 'Maven 依存パッケージインストール先の設定',
+            link: `${ROOT_PATH_JAPANESE}maven-repository`,
           },
         ],
       },
@@ -227,7 +272,6 @@ function useMarxismReadingNoteSidebar(): DefaultTheme.Sidebar {
 
       {
         text: '列宁',
-        collapsible: true,
         collapsed: false,
         items: [
           {
@@ -287,7 +331,6 @@ function useExamPreparationSidebar(): DefaultTheme.Sidebar {
 
       {
         text: 'Sample',
-        collapsible: true,
         collapsed: false,
         items: [
           {
@@ -309,7 +352,6 @@ function useExamPreparationSidebar(): DefaultTheme.Sidebar {
 
       {
         text: 'IT パスポート',
-        collapsible: true,
         collapsed: false,
         items: [
           {

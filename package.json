@@ -2,6 +2,7 @@
   "name": "vitepress-blog",
   "version": "1.0.0",
   "description": "personal blog",
+  "type": "module",
   "main": "index.js",
   "author": "CN_SETSUIKI_HYORYU",
   "license": "MIT",
@@ -11,7 +12,7 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.29",
+    "vitepress": "^1.0.0-rc.44",
     "vue": "^3.2.45"
   }
 }
