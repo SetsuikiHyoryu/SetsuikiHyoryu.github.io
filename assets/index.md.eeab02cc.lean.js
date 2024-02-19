@@ -1,1 +1,0 @@
-import{d as e,u as t,c as a,o}from"./app.17292492.js";const _=JSON.parse('{"title":"HOME","description":"","frontmatter":{"title":"HOME","layout":"page"},"headers":[],"relativePath":"index.md","lastUpdated":1670116004000}'),r={name:"index.md"},i=e({...r,setup(n){return t().go("/zh/"),(c,d)=>(o(),a("div"))}});export{_ as __pageData,i as default};
