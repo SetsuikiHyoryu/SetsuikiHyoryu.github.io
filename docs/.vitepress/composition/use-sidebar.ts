@@ -232,6 +232,10 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
             text: 'Maven 配置依赖包安装路径',
             link: `${ROOT_PATH_CHINESE}maven-repository`,
           },
+          {
+            text: 'git 原生命令查看未上传提交记录',
+            link: `${ROOT_PATH_CHINESE}git-unpushed`,
+          },
         ],
       },
     ],
@@ -249,6 +253,10 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           {
             text: 'Maven 依存パッケージインストール先の設定',
             link: `${ROOT_PATH_JAPANESE}maven-repository`,
+          },
+          {
+            text: 'git 原生コマンドで未アプロードのコミットを確認する',
+            link: `${ROOT_PATH_JAPANESE}git-unpushed`,
           },
         ],
       },
