@@ -225,13 +225,24 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
 
       {
-        text: '配置编程工具',
+        text: '配置路径',
         collapsed: false,
         items: [
           {
             text: 'Maven 配置依赖包安装路径',
             link: `${ROOT_PATH_CHINESE}maven-repository`,
           },
+          {
+            text: 'Rust | 更改 Windows Kits (SDK) 安装路径',
+            link: `${ROOT_PATH_CHINESE}rust-change-windows-kits-root.md`,
+          },
+        ],
+      },
+
+      {
+        text: '版本管理',
+        collapsed: false,
+        items: [
           {
             text: 'git 原生命令查看未上传提交记录',
             link: `${ROOT_PATH_CHINESE}git-unpushed`,
@@ -247,13 +258,24 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
 
       {
-        text: 'プログラミングツールの設定',
+        text: 'パス修正',
         collapsed: false,
         items: [
           {
             text: 'Maven 依存パッケージインストール先の設定',
             link: `${ROOT_PATH_JAPANESE}maven-repository`,
           },
+          {
+            text: 'Rust | 更改 Windows Kits (SDK) 安装路径',
+            link: `${ROOT_PATH_JAPANESE}rust-change-windows-kits-root.md`,
+          },
+        ],
+      },
+
+      {
+        text: 'バージョン管理',
+        collapsed: false,
+        items: [
           {
             text: 'git 原生コマンドで未アプロードのコミットを確認する',
             link: `${ROOT_PATH_JAPANESE}git-unpushed`,
