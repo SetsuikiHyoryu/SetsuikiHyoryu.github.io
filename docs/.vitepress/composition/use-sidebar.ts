@@ -249,6 +249,17 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           },
         ],
       },
+
+      {
+        text: '其他',
+        collapsed: false,
+        items: [
+          {
+            text: 'Neovim 修改文件文字编码',
+            link: `${ROOT_PATH_CHINESE}neovim-garbled-characters.md`,
+          },
+        ],
+      },
     ],
 
     [ROOT_PATH_JAPANESE]: [
@@ -279,6 +290,17 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           {
             text: 'git 原生コマンドで未アプロードのコミットを確認する',
             link: `${ROOT_PATH_JAPANESE}git-unpushed`,
+          },
+        ],
+      },
+
+      {
+        text: 'その他',
+        collapsed: false,
+        items: [
+          {
+            text: 'Neovim でファイルの文字コードを変更する',
+            link: `${ROOT_PATH_JAPANESE}neovim-garbled-characters.md`,
           },
         ],
       },
