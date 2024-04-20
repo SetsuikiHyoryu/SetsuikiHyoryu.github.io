@@ -234,7 +234,7 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           },
           {
             text: 'Rust | 更改 Windows Kits (SDK) 安装路径',
-            link: `${ROOT_PATH_CHINESE}rust-change-windows-kits-root.md`,
+            link: `${ROOT_PATH_CHINESE}rust-change-windows-kits-root`,
           },
         ],
       },
@@ -256,7 +256,11 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         items: [
           {
             text: 'Neovim 修改文件文字编码',
-            link: `${ROOT_PATH_CHINESE}neovim-garbled-characters.md`,
+            link: `${ROOT_PATH_CHINESE}neovim-garbled-characters`,
+          },
+          {
+            text: '使用 LAN 共享文件',
+            link: `${ROOT_PATH_CHINESE}lan-share`,
           },
         ],
       },
