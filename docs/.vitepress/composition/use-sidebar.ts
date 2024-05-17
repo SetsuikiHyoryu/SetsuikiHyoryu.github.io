@@ -240,6 +240,17 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
 
       {
+        text: '工具美化',
+        collapsed: false,
+        items: [
+          {
+            text: '自定义 Git Bash 命令行提示符（Prompt）',
+            link: `${ROOT_PATH_CHINESE}custom-git-bash-prompt`,
+          },
+        ],
+      },
+
+      {
         text: '版本管理',
         collapsed: false,
         items: [
