@@ -273,6 +273,10 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
             text: '使用 LAN 共享文件',
             link: `${ROOT_PATH_CHINESE}lan-share`,
           },
+          {
+            text: 'GitHub 多账户管理及匿名邮箱',
+            link: `${ROOT_PATH_CHINESE}github-multiple-account`,
+          },
         ],
       },
     ],
