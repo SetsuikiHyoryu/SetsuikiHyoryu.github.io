@@ -225,6 +225,21 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
 
       {
+        text: 'Neovim',
+        collapsed: false,
+        items: [
+          {
+            text: 'Neovim 修改文件文字编码',
+            link: `${ROOT_PATH_CHINESE}neovim-garbled-characters`,
+          },
+          {
+            text: 'Neovim 0.10 内置折叠命令',
+            link: `${ROOT_PATH_CHINESE}neovim-fold-commands`,
+          },
+        ],
+      },
+
+      {
         text: '配置路径',
         collapsed: false,
         items: [
@@ -265,10 +280,6 @@ function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         text: '其他',
         collapsed: false,
         items: [
-          {
-            text: 'Neovim 修改文件文字编码',
-            link: `${ROOT_PATH_CHINESE}neovim-garbled-characters`,
-          },
           {
             text: '使用 LAN 共享文件',
             link: `${ROOT_PATH_CHINESE}lan-share`,
