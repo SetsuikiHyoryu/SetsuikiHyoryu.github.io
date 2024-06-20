@@ -1,4 +1,4 @@
-import useSidebar from './use-sidebar'
+import useSidebar from './sidebar'
 import useHead from './use-head'
 
 export { useSidebar, useHead }
