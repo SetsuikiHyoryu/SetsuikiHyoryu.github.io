@@ -1,4 +1,5 @@
 import type { DefaultTheme } from 'vitepress'
+import { useDatabaseSidebar } from './database'
 
 export default function useSidebar(): DefaultTheme.Sidebar {
   return {
@@ -152,33 +153,6 @@ function useProgrammingLanguageSidebar(): DefaultTheme.Sidebar {
           {
             text: 'コマンドラインで C# を単体テスト（xUnit）',
             link: `${ROOT_PATH_JAPANESE}c-sharp/c-sharp_unit-test_command-line`,
-          },
-        ],
-      },
-    ],
-  }
-}
-
-function useDatabaseSidebar(): DefaultTheme.Sidebar {
-  const ROOT_PATH_CHINESE = '/zh/programming/database/'
-
-  return {
-    [ROOT_PATH_CHINESE]: [
-      {
-        text: '编程 - 数据库',
-        items: [
-          { text: '回到首页', link: '/zh/' },
-          { text: '数据库目录', link: ROOT_PATH_CHINESE },
-        ],
-      },
-
-      {
-        text: 'MySQL',
-        collapsed: false,
-        items: [
-          {
-            text: '在 Docker 上使用 MySQL',
-            link: `${ROOT_PATH_CHINESE}mysql/use-mysql-on-docker`,
           },
         ],
       },
