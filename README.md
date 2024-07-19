@@ -8,8 +8,8 @@
 
 ```shell
 # Install dependencies
-yarn install
+pnpm install
 
 # Serve a develop server
-yarn docs:dev
+pnpm run docs:dev
 ```
