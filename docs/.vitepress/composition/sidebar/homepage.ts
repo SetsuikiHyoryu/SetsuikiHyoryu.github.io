@@ -19,19 +19,10 @@ const zhSidebar = (): DefaultTheme.SidebarItem[] => {
       items: [
         {
           text: '编程语言',
-          link: '/zh/programming/language/',
+          link: '/zh/programming/language/javascript/fnm',
         },
-
-        {
-          text: '数据库',
-          link: '/zh/programming/database/',
-        },
-
-        {
-          text: '资源管理工具',
-          link: '/zh/programming/source-manage-tool/',
-        },
-
+        { text: '数据库', link: '/zh/programming/database/' },
+        { text: '资源管理工具', link: '/zh/programming/source-manage-tool/' },
         {
           text: '备忘录',
           link: '/zh/programming/coding-memo/maven-repository',
