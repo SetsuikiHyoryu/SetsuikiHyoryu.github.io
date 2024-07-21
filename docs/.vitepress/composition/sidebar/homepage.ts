@@ -46,12 +46,16 @@ const zhSidebar = (): DefaultTheme.SidebarItem[] => {
     },
 
     {
-      text: '其他',
+      text: '归档',
       collapsed: true,
       items: [
         {
           text: '护照更新流程',
-          link: '/zh/other/passport-renewal',
+          link: '/zh/archive/passport-renewal',
+        },
+        {
+          text: '使用 Docker 容器创建 linux 服务器',
+          link: `/zh/archive/docker-linux-server`,
         },
       ],
     },
