@@ -24,6 +24,10 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
             text: 'Neovim 0.10 内置折叠命令',
             link: `${ROOT_PATH_CHINESE}neovim-fold-commands`,
           },
+          {
+            text: 'Neovim 全局替换',
+            link: `${ROOT_PATH_CHINESE}neovim-global-replace`,
+          },
         ],
       },
 
