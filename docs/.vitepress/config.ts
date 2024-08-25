@@ -46,6 +46,7 @@ export default defineConfigWithTheme<DefaultTheme.Config & CustomTheme.Config>({
 
   themeConfig: {
     logo: '/images/logo.png',
+    outline: { label: 'Outline' },
 
     locales: {
       '/zh/': {
