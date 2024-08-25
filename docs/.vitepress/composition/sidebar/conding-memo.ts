@@ -65,6 +65,14 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
             text: 'git 原生命令查看未上传提交记录',
             link: `${ROOT_PATH_CHINESE}git-unpushed`,
           },
+          {
+            text: 'GitHub 多账户管理及匿名邮箱',
+            link: `${ROOT_PATH_CHINESE}github-multiple-account`,
+          },
+          {
+            text: '由被 fork 的仓库的用户修改 fork 分支',
+            link: `${ROOT_PATH_CHINESE}fork-branch-changes-by-forked-repository-user`,
+          },
         ],
       },
 
@@ -75,10 +83,6 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           {
             text: '使用 LAN 共享文件',
             link: `${ROOT_PATH_CHINESE}lan-share`,
-          },
-          {
-            text: 'GitHub 多账户管理及匿名邮箱',
-            link: `${ROOT_PATH_CHINESE}github-multiple-account`,
           },
         ],
       },
