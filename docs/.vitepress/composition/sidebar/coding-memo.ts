@@ -4,6 +4,8 @@ import { DefaultTheme } from 'vitepress'
 export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
   const ROOT_PATH_CHINESE = '/zh/programming/coding-memo/'
   const ROOT_PATH_JAPANESE = '/ja/programming/coding-memo/'
+  const ROOT_PATH_NEOVIM_CHINESE = '/zh/programming/coding-memo/neovim/'
+  const ROOT_PATH_NUSHELL_CHINESE = '/zh/programming/coding-memo/nushell/'
 
   return {
     [ROOT_PATH_CHINESE]: [
@@ -11,26 +13,34 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         text: '编程 - 备忘录',
         items: [{ text: '回到首页', link: '/zh/' }],
       },
-
       {
         text: 'Neovim',
         collapsed: false,
         items: [
           {
             text: 'Neovim 修改文件文字编码',
-            link: `${ROOT_PATH_CHINESE}neovim-garbled-characters`,
+            link: `${ROOT_PATH_NEOVIM_CHINESE}neovim-garbled-characters`,
           },
           {
             text: 'Neovim 0.10 内置折叠命令',
-            link: `${ROOT_PATH_CHINESE}neovim-fold-commands`,
+            link: `${ROOT_PATH_NEOVIM_CHINESE}neovim-fold-commands`,
           },
           {
             text: 'Neovim 全局替换',
-            link: `${ROOT_PATH_CHINESE}neovim-global-replace`,
+            link: `${ROOT_PATH_NEOVIM_CHINESE}neovim-global-replace`,
           },
         ],
       },
-
+      {
+        text: 'Nushell',
+        collapsed: false,
+        items: [
+          {
+            text: 'Nushell 配置 fnm 使用 Node.js',
+            link: `${ROOT_PATH_NUSHELL_CHINESE}nushell-fnm`,
+          },
+        ],
+      },
       {
         text: '配置路径',
         collapsed: false,

@@ -11,5 +11,5 @@
 pnpm install
 
 # Serve a develop server
-pnpm run docs:dev
+pnpm docs:dev
 ```

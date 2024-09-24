@@ -3,7 +3,7 @@ import type { DefaultTheme } from 'vitepress'
 import { useHomepageSidebar } from './homepage'
 import { useProgrammingLanguageSidebar } from './programming-language'
 import { useDatabaseSidebar } from './programming-database'
-import { useCodingMemoSidebar } from './conding-memo'
+import { useCodingMemoSidebar } from './coding-memo'
 
 export default function useSidebar(): DefaultTheme.Sidebar {
   return {
