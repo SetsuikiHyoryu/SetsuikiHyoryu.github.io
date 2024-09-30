@@ -33,6 +33,16 @@ export function useProgrammingLanguageSidebar(): DefaultTheme.Sidebar {
           },
         ],
       },
+      {
+        text: 'Rust',
+        collapsed: false,
+        items: [
+          {
+            text: '关于 Rust 的一点看法',
+            link: `${ROOT_PATH_CHINESE}rust/rust-thoughts`,
+          },
+        ],
+      },
     ],
 
     [ROOT_PATH_JAPANESE]: [
