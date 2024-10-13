@@ -24,22 +24,32 @@ export function useProgrammingLanguageSidebar(): DefaultTheme.Sidebar {
         ],
       },
       {
-        text: 'C#',
-        collapsed: false,
-        items: [
-          {
-            text: '命令行单元测试 C#（xUnit）',
-            link: `${ROOT_PATH_CHINESE}c-sharp/c-sharp_unit-test_command-line`,
-          },
-        ],
-      },
-      {
         text: 'Rust',
         collapsed: false,
         items: [
           {
             text: '关于 Rust 的一点看法',
             link: `${ROOT_PATH_CHINESE}rust/rust-thoughts`,
+          },
+        ],
+      },
+      {
+        text: 'C',
+        collapsed: false,
+        items: [
+          {
+            text: 'C 语言开发环境',
+            link: `${ROOT_PATH_CHINESE}c/develop-environment`,
+          },
+        ],
+      },
+      {
+        text: 'C#',
+        collapsed: false,
+        items: [
+          {
+            text: '命令行单元测试 C#（xUnit）',
+            link: `${ROOT_PATH_CHINESE}c-sharp/c-sharp_unit-test_command-line`,
           },
         ],
       },
