@@ -18,6 +18,10 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         collapsed: false,
         items: [
           {
+            text: 'Neovim 帮助文档细节',
+            link: `${ROOT_PATH_NEOVIM_CHINESE}neovim-help-document-detail`,
+          },
+          {
             text: 'Neovim 修改文件文字编码',
             link: `${ROOT_PATH_NEOVIM_CHINESE}neovim-garbled-characters`,
           },
