@@ -1,5 +1,9 @@
 # Neovim 帮助文档细节
 
+## `help`
+
+- 在输入 `help word` 的过程中按 CTRL-D 可以查看匹配 word 的所有入口。
+
 ## `help [quotex]`
 
 - 大小写使用相同的寄存器。
