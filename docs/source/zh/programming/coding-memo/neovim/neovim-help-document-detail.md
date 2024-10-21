@@ -47,3 +47,23 @@
 - `:write >> file`: 将当前文件（或选中区域）以 append 的方式写入指定文件。
 - `:saveas file`: 将当前缓冲区保存为新文件并打开它。
 - `:file file`: 修改当前缓冲区文件名。
+
+### usr_08.txt Splitting windows
+
+- `:close`: 关闭 window 或 tab，可以预防在最后一个窗口时退出 Neovim。
+  - 在只有空白 buffer 和 help 时非常管用。
+- `:only`: 关闭当前以外的所有窗口。
+- `:split file`: 以分割 window 的方式打开指定的文件。
+- `:new` / `vnew`: 以分割 window 的方式打开空白 buffer。
+- `:3new` / `3split`: 以三行高度的方式分割新 windows。
+- `:vertical new` / `:vertical split`: 将使命令垂直拆分 window。
+- CTRL-W t: move to the TOP window。
+- CTRL-W b: move to the BOTTOM window。
+- `Q_wi`: muliti-window commands。
+- CTRL-W K: 大写 HJKL 修改 window 位置（最一端）。
+- `:all` / `:vertical all`: 将 argument list 中的每一个文件在新 window 里打开。
+- `nvim -d filea fileb`: 以垂直 diff 的方式打开两个文件。
+- 在已经打开了一个文件的情况下可以执行 `:vertical diffsplit fileb` 来实现垂直比对。
+- `:diffupdate`, `:dp`, `:do`: 对差异进进处理。可以查看帮助 `diff-mode`。
+- 许多命令加 `s` 表示用 split 打开。快捷键前则可以加 CTWRL-W。
+- 可以用 `:leftabove split` 等的方式指定窗口的位置。
