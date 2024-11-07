@@ -46,6 +46,28 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         ],
       },
       {
+        text: 'Git',
+        collapsed: false,
+        items: [
+          {
+            text: 'GitHub 多账户管理及匿名邮箱',
+            link: `${ROOT_PATH_CHINESE}github-multiple-account`,
+          },
+          {
+            text: '由被 fork 的仓库的用户修改 fork 分支',
+            link: `${ROOT_PATH_CHINESE}fork-branch-changes-by-forked-repository-user`,
+          },
+          {
+            text: 'git 原生命令查看未上传提交记录',
+            link: `${ROOT_PATH_CHINESE}git-unpushed`,
+          },
+          {
+            text: '`git log` / `git show`',
+            link: `${ROOT_PATH_CHINESE}git-log-and-show`,
+          },
+        ],
+      },
+      {
         text: '配置路径',
         collapsed: false,
         items: [
@@ -59,7 +81,6 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           },
         ],
       },
-
       {
         text: '工具美化',
         collapsed: false,
@@ -70,26 +91,6 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           },
         ],
       },
-
-      {
-        text: '版本管理',
-        collapsed: false,
-        items: [
-          {
-            text: 'git 原生命令查看未上传提交记录',
-            link: `${ROOT_PATH_CHINESE}git-unpushed`,
-          },
-          {
-            text: 'GitHub 多账户管理及匿名邮箱',
-            link: `${ROOT_PATH_CHINESE}github-multiple-account`,
-          },
-          {
-            text: '由被 fork 的仓库的用户修改 fork 分支',
-            link: `${ROOT_PATH_CHINESE}fork-branch-changes-by-forked-repository-user`,
-          },
-        ],
-      },
-
       {
         text: '其他',
         collapsed: false,
@@ -107,7 +108,26 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         text: 'プログラミング - 備忘録',
         items: [{ text: 'トップに戻る', link: '/ja/' }],
       },
-
+      {
+        text: 'Neovim',
+        collapsed: false,
+        items: [
+          {
+            text: 'Neovim でファイルの文字コードを変更する',
+            link: `${ROOT_PATH_JAPANESE}neovim-garbled-characters.md`,
+          },
+        ],
+      },
+      {
+        text: 'Git',
+        collapsed: false,
+        items: [
+          {
+            text: 'git 原生コマンドで未アプロードのコミットを確認する',
+            link: `${ROOT_PATH_JAPANESE}git-unpushed`,
+          },
+        ],
+      },
       {
         text: 'パス修正',
         collapsed: false,
@@ -119,28 +139,6 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           {
             text: 'Rust | 更改 Windows Kits (SDK) 安装路径',
             link: `${ROOT_PATH_JAPANESE}rust-change-windows-kits-root.md`,
-          },
-        ],
-      },
-
-      {
-        text: 'バージョン管理',
-        collapsed: false,
-        items: [
-          {
-            text: 'git 原生コマンドで未アプロードのコミットを確認する',
-            link: `${ROOT_PATH_JAPANESE}git-unpushed`,
-          },
-        ],
-      },
-
-      {
-        text: 'その他',
-        collapsed: false,
-        items: [
-          {
-            text: 'Neovim でファイルの文字コードを変更する',
-            link: `${ROOT_PATH_JAPANESE}neovim-garbled-characters.md`,
           },
         ],
       },
