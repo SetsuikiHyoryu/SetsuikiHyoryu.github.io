@@ -65,6 +65,10 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
             text: '`git log` / `git show`',
             link: `${ROOT_PATH_CHINESE}git-log-and-show`,
           },
+          {
+            text: '使用 `git bundle` 脱机复刻提交历史',
+            link: `${ROOT_PATH_CHINESE}git-bundle`,
+          },
         ],
       },
       {
