@@ -4,12 +4,13 @@
 
 <https://pnpm.io/zh/installation>
 
-## 安装
+## 安装（Windows）
 
-| OS      | 安装方法                                                                                             |
-| ------- | ---------------------------------------------------------------------------------------------------- |
-| Windows | [使用 winget 安装](https://pnpm.io/zh/installation#%E4%BD%BF%E7%94%A8winget%E5%AE%89%E8%A3%85)       |
-| MacOS   | [使用 HomeBrew 安装](https://pnpm.io/zh/installation#%E4%BD%BF%E7%94%A8-homebrew-%E5%AE%89%E8%A3%85) |
+[在安装 fnm 后使用 corepack 安装](https://pnpm.io/zh/installation#%E4%BD%BF%E7%94%A8-corepack-%E5%AE%89%E8%A3%85)
+
+## 更新
+
+在用了 pnpm 的项目中执行 `corepack up`。
 
 ## 管理配置
 
