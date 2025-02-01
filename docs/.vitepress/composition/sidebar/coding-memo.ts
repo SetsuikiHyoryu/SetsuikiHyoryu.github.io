@@ -58,7 +58,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
             link: `${ROOT_PATH_CHINESE}fork-branch-changes-by-forked-repository-user`,
           },
           {
-            text: 'git 原生命令查看未上传提交记录',
+            text: 'Git 原生命令查看未上传提交记录',
             link: `${ROOT_PATH_CHINESE}git-unpushed`,
           },
           {
