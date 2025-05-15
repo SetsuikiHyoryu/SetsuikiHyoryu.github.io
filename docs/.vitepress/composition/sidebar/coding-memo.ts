@@ -107,6 +107,10 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
             text: '使用 LAN 共享文件',
             link: `${ROOT_PATH_CHINESE}lan-share`,
           },
+          {
+            text: '以不用 GUI 操作的方式启动有管理员权限的终端',
+            link: `${ROOT_PATH_CHINESE}open-admin-terminal-without-gui`,
+          },
         ],
       },
     ],
@@ -146,7 +150,17 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           },
           {
             text: 'Rust | 更改 Windows Kits (SDK) 安装路径',
-            link: `${ROOT_PATH_JAPANESE}rust-change-windows-kits-root.md`,
+            link: `${ROOT_PATH_JAPANESE}rust-change-windows-kits-root`,
+          },
+        ],
+      },
+      {
+        text: 'その他',
+        collapsed: false,
+        items: [
+          {
+            text: 'GUI を使わずに管理者権限のターミナルを開く',
+            link: `${ROOT_PATH_JAPANESE}open-admin-terminal-without-gui`,
           },
         ],
       },
