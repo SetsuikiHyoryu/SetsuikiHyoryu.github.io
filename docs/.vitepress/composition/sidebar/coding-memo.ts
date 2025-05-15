@@ -149,7 +149,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
             link: `${ROOT_PATH_JAPANESE}maven-repository`,
           },
           {
-            text: 'Rust | 更改 Windows Kits (SDK) 安装路径',
+            text: 'Rust | Windows Kits (SDK) インストール先を変更する',
             link: `${ROOT_PATH_JAPANESE}rust-change-windows-kits-root`,
           },
         ],

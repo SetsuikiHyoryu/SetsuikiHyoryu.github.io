@@ -1,4 +1,4 @@
-# Rust | Widnow Kits (SDK) インストールパスの修正
+# Rust | Widnow Kits (SDK) インストール先を変更する
 
 ## 問題記述
 
