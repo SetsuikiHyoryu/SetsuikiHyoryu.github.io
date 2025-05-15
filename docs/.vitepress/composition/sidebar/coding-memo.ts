@@ -4,8 +4,10 @@ import { DefaultTheme } from 'vitepress'
 export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
   const ROOT_PATH_CHINESE = '/zh/programming/coding-memo/'
   const ROOT_PATH_JAPANESE = '/ja/programming/coding-memo/'
-  const ROOT_PATH_NEOVIM_CHINESE = '/zh/programming/coding-memo/neovim/'
-  const ROOT_PATH_NUSHELL_CHINESE = '/zh/programming/coding-memo/nushell/'
+
+  const ROOT_PATH_CHINESE_GIT = `${ROOT_PATH_CHINESE}git/`
+  const ROOT_PATH_CHINESE_NEOVIM = `${ROOT_PATH_CHINESE}neovim/`
+  const ROOT_PATH_CHINESE_NUSHELL = `${ROOT_PATH_CHINESE}/nushell`
 
   return {
     [ROOT_PATH_CHINESE]: [
@@ -19,19 +21,19 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         items: [
           {
             text: 'Neovim 帮助文档细节',
-            link: `${ROOT_PATH_NEOVIM_CHINESE}neovim-help-document-detail`,
+            link: `${ROOT_PATH_CHINESE_NEOVIM}neovim-help-document-detail`,
           },
           {
             text: 'Neovim 修改文件文字编码',
-            link: `${ROOT_PATH_NEOVIM_CHINESE}neovim-garbled-characters`,
+            link: `${ROOT_PATH_CHINESE_NEOVIM}neovim-garbled-characters`,
           },
           {
             text: 'Neovim 0.10 内置折叠命令',
-            link: `${ROOT_PATH_NEOVIM_CHINESE}neovim-fold-commands`,
+            link: `${ROOT_PATH_CHINESE_NEOVIM}neovim-fold-commands`,
           },
           {
             text: 'Neovim 全局替换',
-            link: `${ROOT_PATH_NEOVIM_CHINESE}neovim-global-replace`,
+            link: `${ROOT_PATH_CHINESE_NEOVIM}neovim-global-replace`,
           },
         ],
       },
@@ -41,7 +43,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         items: [
           {
             text: 'Nushell 配置 fnm 使用 Node.js',
-            link: `${ROOT_PATH_NUSHELL_CHINESE}nushell-fnm`,
+            link: `${ROOT_PATH_CHINESE_NUSHELL}nushell-fnm`,
           },
         ],
       },
@@ -51,23 +53,23 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         items: [
           {
             text: 'GitHub 多账户管理及匿名邮箱',
-            link: `${ROOT_PATH_CHINESE}github-multiple-account`,
+            link: `${ROOT_PATH_CHINESE_GIT}github-multiple-account`,
           },
           {
             text: '由被 fork 的仓库的用户修改 fork 分支',
-            link: `${ROOT_PATH_CHINESE}fork-branch-changes-by-forked-repository-user`,
+            link: `${ROOT_PATH_CHINESE_GIT}fork-branch-changes-by-forked-repository-user`,
           },
           {
             text: 'Git 原生命令查看未上传提交记录',
-            link: `${ROOT_PATH_CHINESE}git-unpushed`,
+            link: `${ROOT_PATH_CHINESE_GIT}git-unpushed`,
           },
           {
             text: '`git log` / `git show`',
-            link: `${ROOT_PATH_CHINESE}git-log-and-show`,
+            link: `${ROOT_PATH_CHINESE_GIT}git-log-and-show`,
           },
           {
             text: '使用 `git bundle` 脱机复刻提交历史',
-            link: `${ROOT_PATH_CHINESE}git-bundle`,
+            link: `${ROOT_PATH_CHINESE_GIT}git-bundle`,
           },
         ],
       },
