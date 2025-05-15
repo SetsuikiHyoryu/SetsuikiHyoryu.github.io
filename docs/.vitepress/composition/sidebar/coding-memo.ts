@@ -3,11 +3,13 @@ import { DefaultTheme } from 'vitepress'
 /** 编程 - 备忘录边栏 */
 export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
   const ROOT_PATH_CHINESE = '/zh/programming/coding-memo/'
-  const ROOT_PATH_JAPANESE = '/ja/programming/coding-memo/'
-
   const ROOT_PATH_CHINESE_GIT = `${ROOT_PATH_CHINESE}git/`
   const ROOT_PATH_CHINESE_NEOVIM = `${ROOT_PATH_CHINESE}neovim/`
   const ROOT_PATH_CHINESE_NUSHELL = `${ROOT_PATH_CHINESE}/nushell`
+
+  const ROOT_PATH_JAPANESE = '/ja/programming/coding-memo/'
+  const ROOT_PATH_JAPANESE_GIT = `${ROOT_PATH_JAPANESE}git/`
+  const ROOT_PATH_JAPANESE_NEOVIM = `${ROOT_PATH_JAPANESE}neovim/`
 
   return {
     [ROOT_PATH_CHINESE]: [
@@ -120,7 +122,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         items: [
           {
             text: 'Neovim でファイルの文字コードを変更する',
-            link: `${ROOT_PATH_JAPANESE}neovim-garbled-characters.md`,
+            link: `${ROOT_PATH_JAPANESE_NEOVIM}neovim-garbled-characters.md`,
           },
         ],
       },
@@ -130,7 +132,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
         items: [
           {
             text: 'git 原生コマンドで未アプロードのコミットを確認する',
-            link: `${ROOT_PATH_JAPANESE}git-unpushed`,
+            link: `${ROOT_PATH_JAPANESE_GIT}git-unpushed`,
           },
         ],
       },
