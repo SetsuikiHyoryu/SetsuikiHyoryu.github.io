@@ -5,7 +5,8 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
   const ROOT_PATH_CHINESE = '/zh/programming/coding-memo/'
   const ROOT_PATH_CHINESE_GIT = `${ROOT_PATH_CHINESE}git/`
   const ROOT_PATH_CHINESE_NEOVIM = `${ROOT_PATH_CHINESE}neovim/`
-  const ROOT_PATH_CHINESE_NUSHELL = `${ROOT_PATH_CHINESE}/nushell`
+  const ROOT_PATH_CHINESE_NUSHELL = `${ROOT_PATH_CHINESE}nushell/`
+  const ROOT_PATH_CHINESE_YAZI = `${ROOT_PATH_CHINESE}yazi/`
 
   const ROOT_PATH_JAPANESE = '/ja/programming/coding-memo/'
   const ROOT_PATH_JAPANESE_GIT = `${ROOT_PATH_JAPANESE}git/`
@@ -72,6 +73,16 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           {
             text: '使用 `git bundle` 脱机复刻提交历史',
             link: `${ROOT_PATH_CHINESE_GIT}git-bundle`,
+          },
+        ],
+      },
+      {
+        text: 'Yazi (命令行资源管理器)',
+        collapsed: false,
+        items: [
+          {
+            text: 'Yazi 的安装及配置',
+            link: `${ROOT_PATH_CHINESE_YAZI}yazi-install-and-config`,
           },
         ],
       },
