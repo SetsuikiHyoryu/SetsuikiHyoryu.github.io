@@ -322,7 +322,7 @@ byte stream
 
 可知结果为字节流。
 
-从 [Records](https://www.nushell.sh/book/types_of_data.html#records) 章节中可知文章 [Working with Records](https://www.nushell.sh/book/working_with_records.html#creating-records)，其中提到可以使用 [`fromi json`](https://www.nushell.sh/commands/docs/from_json.html) 命令将 JSON 结构的文字中转化为 Record 类型。
+从 [Records](https://www.nushell.sh/book/types_of_data.html#records) 章节中可知文章 [Working with Records](https://www.nushell.sh/book/working_with_records.html#creating-records)，其中提到可以使用 [`from json`](https://www.nushell.sh/commands/docs/from_json.html) 命令将 JSON 结构的文字中转化为 Record 类型。
 
 进行实践：
 
