@@ -42,7 +42,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
       {
         text: 'Nushell',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: 'Nushell 配置 fnm 使用 Node.js',
@@ -52,7 +52,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
       {
         text: 'Git',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: 'GitHub 多账户管理及匿名邮箱',
@@ -78,7 +78,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
       {
         text: 'Yazi (命令行资源管理器)',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: 'Yazi 的安装及配置',
@@ -88,7 +88,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
       {
         text: '配置路径',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: 'Maven 配置依赖包安装路径',
@@ -102,7 +102,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
       {
         text: '工具美化',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: '自定义 Git Bash 命令行提示符（Prompt）',
@@ -143,7 +143,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
       {
         text: 'Git',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: 'git 原生コマンドで未アプロードのコミットを確認する',
@@ -153,7 +153,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
       },
       {
         text: 'パス修正',
-        collapsed: false,
+        collapsed: true,
         items: [
           {
             text: 'Maven 依存パッケージインストール先の設定',
