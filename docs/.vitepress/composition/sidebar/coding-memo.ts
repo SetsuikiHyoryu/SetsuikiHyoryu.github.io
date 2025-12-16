@@ -7,6 +7,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
   const ROOT_PATH_CHINESE_NEOVIM = `${ROOT_PATH_CHINESE}neovim/`
   const ROOT_PATH_CHINESE_NUSHELL = `${ROOT_PATH_CHINESE}nushell/`
   const ROOT_PATH_CHINESE_YAZI = `${ROOT_PATH_CHINESE}yazi/`
+  const ROOT_PATH_CHINESE_INFRASTRUCTURE = `${ROOT_PATH_CHINESE}infrastructure/`
 
   const ROOT_PATH_JAPANESE = '/ja/programming/coding-memo/'
   const ROOT_PATH_JAPANESE_GIT = `${ROOT_PATH_JAPANESE}git/`
@@ -83,6 +84,16 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           {
             text: 'Yazi 的安装及配置',
             link: `${ROOT_PATH_CHINESE_YAZI}yazi-install-and-config`,
+          },
+        ],
+      },
+      {
+        text: 'Infrastructure',
+        collapsed: true,
+        items: [
+          {
+            text: 'SSH 使用工作流',
+            link: `${ROOT_PATH_CHINESE_INFRASTRUCTURE}ssh-usage-workflow`,
           },
         ],
       },
