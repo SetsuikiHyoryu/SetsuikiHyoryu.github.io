@@ -11,7 +11,7 @@ const zhSidebar = (): DefaultTheme.SidebarItem[] => {
   return [
     {
       text: '首页',
-      items: [{ text: '简介', link: '/' }],
+      items: [{ text: '简介', link: '/zh/' }],
     },
 
     {
@@ -25,7 +25,7 @@ const zhSidebar = (): DefaultTheme.SidebarItem[] => {
         { text: '资源管理工具', link: '/zh/programming/source-manage-tool/' },
         {
           text: '备忘录',
-          link: '/zh/programming/coding-memo/maven-repository',
+          link: '/zh/programming/coding-memo/neovim/neovim-help-document-detail',
         },
       ],
     },
@@ -66,7 +66,7 @@ const jaSidebar = (): DefaultTheme.SidebarItem[] => {
   return [
     {
       text: 'トップ',
-      items: [{ text: '概要', link: '/' }],
+      items: [{ text: '概要', link: '/ja/' }],
     },
 
     {
