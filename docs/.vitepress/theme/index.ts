@@ -1,4 +1,7 @@
-import DefaultTheme from 'vitepress/theme'
+import { Theme } from 'vitepress'
+import DefaultTheme from 'vitepress/theme-without-fonts'
 import './custom.css'
 
-export default DefaultTheme
+export default {
+  extends: DefaultTheme,
+} satisfies Theme

@@ -3,7 +3,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&display=swap');
 
 :root {
-  --vp-font-family-base: 'Fira Code', 'Noto Sans SC', 'Noto Serif SC',
-    sans-serif;
-  --vp-font-family-mono: 'Fira Code', 'Noto Sans SC', 'Noto Serif SC', monospace;
+  /* font */
+  --vp-font-family-base:
+    'Fira Code', 'Noto Sans SC', 'Noto Serif SC', sans-serif;
+  --vp-font-family-mono:
+    'Fira Code', 'Noto Sans SC', 'Noto Serif SC', monospace;
+
+  /* body */
+  --vp-c-bg: transparent;
+
+  /* nav */
+  --vp-nav-bg-color: transparent;
+  --vp-local-nav-bg-color: transparent;
+  --vp-c-gutter: rgba(255, 255, 255, 0.3); /* border-bottom */
+
+  /* sidebar */
+  --vp-sidebar-bg-color: transparent;
+
+  /* code */
+  --vp-code-bg: rgba(101, 117, 133, 0.3);
+  --vp-code-block-bg: rgb(22, 22, 24, 0.6);
+
+  /* table */
+  --vp-c-bg-soft: rgb(32, 33, 39, 0.6);
+
+  /* border */
+  --vp-c-divider: rgba(255, 255, 255, 0.3);
 }
+
+/* background image */
+body::before {
+  background-image: url(/images/background/background.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: blur(0.7px) brightness(0.3);
+
+  content: '';
+  inset: 0;
+  position: fixed;
+
+  /* 没有改变实际的视觉效果，但理论上应该放在最下面。 */
+  z-index: -1;
+}
+
+/* TODO: 添加一键展示纯背景 */
+/* body::before { */
+/*   filter: brightness(0.3); */
+/*   z-index: 29; */
+/* } */
