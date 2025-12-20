@@ -12,8 +12,8 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "vitepress": "^1.6.3",
-    "vue": "^3.5.14"
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.26"
   },
   "#packageManager": "不设置此属性会无法通过 Git Actions。",
   "packageManager": "pnpm@10.22.0"
