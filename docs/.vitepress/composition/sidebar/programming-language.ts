@@ -53,6 +53,16 @@ export function useProgrammingLanguageSidebar(): DefaultTheme.Sidebar {
           },
         ],
       },
+      {
+        text: 'Java',
+        collapsed: false,
+        items: [
+          {
+            text: '用 Neovim 开发 Spring Boot 项目',
+            link: `${ROOT_PATH_CHINESE}java/develop-spring-boot-project-with-neovim`,
+          },
+        ],
+      },
     ],
 
     [ROOT_PATH_JAPANESE]: [
