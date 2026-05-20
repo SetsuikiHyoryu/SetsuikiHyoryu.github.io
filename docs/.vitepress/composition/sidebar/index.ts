@@ -4,6 +4,7 @@ import { useHomepageSidebar } from './homepage'
 import { useProgrammingLanguageSidebar } from './programming-language'
 import { useDatabaseSidebar } from './programming-database'
 import { useCodingMemoSidebar } from './coding-memo'
+import { useAISidebar } from './ai'
 
 export default function useSidebar(): DefaultTheme.Sidebar {
   return {
@@ -11,6 +12,7 @@ export default function useSidebar(): DefaultTheme.Sidebar {
 
     // 编程
     ...useProgrammingLanguageSidebar(),
+    ...useAISidebar(),
     ...useDatabaseSidebar(),
     ...useProgrammingSourceManageToolSidebar(),
     ...useCodingMemoSidebar(),

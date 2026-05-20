@@ -21,6 +21,10 @@ const zhSidebar = (): DefaultTheme.SidebarItem[] => {
           text: '编程语言',
           link: '/zh/programming/language/javascript/fnm',
         },
+        {
+          text: 'AI',
+          link: '/zh/programming/ai/ai-coding/memoration',
+        },
         { text: '数据库', link: '/zh/programming/database/' },
         { text: '资源管理工具', link: '/zh/programming/source-manage-tool/' },
         {
@@ -80,7 +84,10 @@ const jaSidebar = (): DefaultTheme.SidebarItem[] => {
           text: '試験準備',
           link: '/ja/programming/exam-preparation/',
         },
-
+        {
+          text: 'AI',
+          link: '/ja/programming/ai/ai-coding',
+        },
         {
           text: '備忘録',
           link: '/ja/programming/coding-memo/maven-repository',
@@ -95,7 +102,6 @@ const jaSidebar = (): DefaultTheme.SidebarItem[] => {
           text: '読書ノート',
           link: '/ja/marxism/reading-note/',
         },
-
         {
           text: '読書レポート',
           link: '/ja/marxism/reading-report/',
