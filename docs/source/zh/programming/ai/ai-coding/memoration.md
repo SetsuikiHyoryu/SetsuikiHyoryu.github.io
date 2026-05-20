@@ -54,3 +54,11 @@ opencode
 
 到此为一轮循环，没问题的话就 `git commit` 提交，  
 有小问题的话就手动修改，有大问题的话让 AI 修改。
+
+## Q&A
+
+### 同一个仓库应该在一个 session 内交互还是每次新建 session 
+
+一个独立的功能开发（或 Bug 修复）对应一个 Session。  
+开发中途通过 opencode --continue 保持记忆。  
+功能开发完毕并 Git Commit 之后，果断开启新 Session，严防上下文膨胀。
