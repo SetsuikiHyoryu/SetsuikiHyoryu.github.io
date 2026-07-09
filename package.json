@@ -13,8 +13,8 @@
   },
   "devDependencies": {
     "vitepress": "^1.6.4",
-    "vue": "^3.5.26"
+    "vue": "^3.5.39"
   },
   "#packageManager": "不设置此属性会无法通过 Git Actions。",
-  "packageManager": "pnpm@10.22.0"
+  "packageManager": "pnpm@11.10.0"
 }
