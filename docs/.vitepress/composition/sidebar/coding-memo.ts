@@ -12,6 +12,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
   const ROOT_PATH_JAPANESE = '/ja/programming/coding-memo/'
   const ROOT_PATH_JAPANESE_GIT = `${ROOT_PATH_JAPANESE}git/`
   const ROOT_PATH_JAPANESE_NEOVIM = `${ROOT_PATH_JAPANESE}neovim/`
+  const ROOT_PATH_JAPANESE_NUSHELL = `${ROOT_PATH_JAPANESE}nushell/`
 
   return {
     [ROOT_PATH_CHINESE]: [
@@ -48,6 +49,10 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           {
             text: 'Nushell 配置 fnm 使用 Node.js',
             link: `${ROOT_PATH_CHINESE_NUSHELL}nushell-fnm`,
+          },
+          {
+            text: 'Shell 的 vi 模式下映射左方括号键（`Ctrl + [` -> `Esc`）',
+            link: `${ROOT_PATH_CHINESE_NUSHELL}terminal-shell-ctrl-bracket-esc`,
           },
         ],
       },
@@ -149,6 +154,16 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           {
             text: 'Neovim でファイルの文字コードを変更する',
             link: `${ROOT_PATH_JAPANESE_NEOVIM}neovim-garbled-characters.md`,
+          },
+        ],
+      },
+      {
+        text: 'Nushell',
+        collapsed: true,
+        items: [
+          {
+            text: 'Shell の vi モードで左角括弧キーをマッピングする（`Ctrl + [` -> `Esc`）',
+            link: `${ROOT_PATH_JAPANESE_NUSHELL}terminal-shell-ctrl-bracket-esc`,
           },
         ],
       },
