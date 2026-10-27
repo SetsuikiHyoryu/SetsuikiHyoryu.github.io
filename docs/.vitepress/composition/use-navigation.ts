@@ -29,6 +29,11 @@ export function useChineseNavigation(): DefaultTheme.NavItem[] {
               text: '读书报告',
               link: '/zh/marxism/reading-report/',
             },
+
+            {
+              text: '评论',
+              link: '/zh/marxism/comment/',
+            },
           ],
         },
       ],

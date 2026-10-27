@@ -21,6 +21,7 @@ export default function useSidebar(): DefaultTheme.Sidebar {
     // 马克思主义
     ...useMarxismReadingNoteSidebar(),
     ...useMarxismReadingReportSidebar(),
+    ...useMarxismCommentSidebar(),
   }
 }
 
@@ -82,6 +83,33 @@ function useMarxismReadingNoteSidebar(): DefaultTheme.Sidebar {
         items: [
           { text: 'トップに戻る', link: '/ja/' },
           { text: '読書ノート目録', link: ROOT_PATH_JAPANESE },
+        ],
+      },
+    ],
+  }
+}
+
+function useMarxismCommentSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH_CHINESE = '/zh/marxism/comment/'
+
+  return {
+    [ROOT_PATH_CHINESE]: [
+      {
+        text: '马克思主义 - 评论',
+        items: [
+          { text: '回到首页', link: '/zh/' },
+          { text: '评论目录', link: ROOT_PATH_CHINESE },
+        ],
+      },
+
+      {
+        text: '视频评论',
+        collapsed: false,
+        items: [
+          {
+            text: '评论【如果蒋介石赢了，中国真能变强？毛主席临终前的答案，道破了天机 | BV1ztND69E4j】',
+            link: `${ROOT_PATH_CHINESE}BV1ztND69E4j`,
+          },
         ],
       },
     ],
