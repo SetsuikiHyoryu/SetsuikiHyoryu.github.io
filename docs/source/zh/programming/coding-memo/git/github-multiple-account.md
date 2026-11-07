@@ -22,7 +22,8 @@ cat ~/.ssh/id_ed25519.pub | clip
 
 ### 编辑 SSH config 文件以适配不同账号
 
-```config ~/.ssh/config
+```bash
+config ~/.ssh/config
 Host github.com
   HostName github.com
   User git
