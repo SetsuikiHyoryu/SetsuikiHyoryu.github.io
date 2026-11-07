@@ -80,6 +80,10 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
             text: '使用 `git bundle` 脱机复刻提交历史',
             link: `${ROOT_PATH_CHINESE_GIT}git-bundle`,
           },
+          {
+            text: '使用裸仓库管理家目录的 dotfile',
+            link: `${ROOT_PATH_CHINESE_GIT}dotfiles-bare-repository`,
+          },
         ],
       },
       {
@@ -174,6 +178,10 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           {
             text: 'git 原生コマンドで未アプロードのコミットを確認する',
             link: `${ROOT_PATH_JAPANESE_GIT}git-unpushed`,
+          },
+          {
+            text: 'ベアリポジトリでホームディレクトリの dotfile を管理する',
+            link: `${ROOT_PATH_JAPANESE_GIT}dotfiles-bare-repository`,
           },
         ],
       },
