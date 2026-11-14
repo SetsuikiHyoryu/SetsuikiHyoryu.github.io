@@ -1,2 +1,5 @@
 allowBuilds:
   esbuild: true
+
+# 版本不符时只警告、不自动下载副本（本机 pnpm 版本由 mise/Homebrew 统一管理）。
+pmOnFail: warn

@@ -1,0 +1,15 @@
+# 统一以 LF 读写，避免 Windows（core.autocrlf=true）检出时把文本转成 CRLF。
+* text=auto eol=lf
+
+# 锁文件单独声明：跨机器编辑时哪怕被转成 CRLF，也会导致整篇 diff。
+pnpm-lock.yaml text eol=lf
+
+# 二进制资源不做行尾转换与文本 diff。
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
