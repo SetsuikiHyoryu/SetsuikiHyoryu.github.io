@@ -8,6 +8,7 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
   const ROOT_PATH_CHINESE_NUSHELL = `${ROOT_PATH_CHINESE}nushell/`
   const ROOT_PATH_CHINESE_YAZI = `${ROOT_PATH_CHINESE}yazi/`
   const ROOT_PATH_CHINESE_INFRASTRUCTURE = `${ROOT_PATH_CHINESE}infrastructure/`
+  const ROOT_PATH_CHINESE_DSH = `${ROOT_PATH_CHINESE}dsh/`
 
   const ROOT_PATH_JAPANESE = '/ja/programming/coding-memo/'
   const ROOT_PATH_JAPANESE_GIT = `${ROOT_PATH_JAPANESE}git/`
@@ -103,6 +104,16 @@ export function useCodingMemoSidebar(): DefaultTheme.Sidebar {
           {
             text: 'SSH 使用工作流',
             link: `${ROOT_PATH_CHINESE_INFRASTRUCTURE}ssh-usage-workflow`,
+          },
+        ],
+      },
+      {
+        text: 'DSH (DeepSeek Harness)',
+        collapsed: false,
+        items: [
+          {
+            text: 'DSH 安装与插件',
+            link: `${ROOT_PATH_CHINESE_DSH}dsh-install`,
           },
         ],
       },
